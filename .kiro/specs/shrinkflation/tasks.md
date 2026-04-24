@@ -149,8 +149,8 @@ Tasks are sequenced for the fastest path to a working demo: seed data first, the
   - Verify in the browser that a user can type a product name, see search results with verified badges, click a result, and see the full Shrinkflation Receipt with all charts, deception gap badge, and source citations rendered correctly for at least one seed product.
   - Ensure all tests pass, ask the user if questions arise.
 
-- [ ] 10. Backend: Brand Leaderboard <!-- Aneesh -->
-  - [ ] 10.1 Implement severity score calculation in `app/calculations/severity_score.py`
+- [x] 10. Backend: Brand Leaderboard <!-- Aneesh -->
+  - [x] 10.1 Implement severity score calculation in `app/calculations/severity_score.py`
     - Write `compute_severity_score(events: list[ShrinkflationEvent]) -> float` applying recency weighting (2× for events within last 3 years) and normalizing to 0–100
     - _Requirements: 8.2_
 
@@ -158,12 +158,12 @@ Tasks are sequenced for the fastest path to a working demo: seed data first, the
     - **Property 17: Severity score formula correctness** — `st.lists(st.builds(ShrinkflationEvent), min_size=1)`; assert recency_weight=2.0 for recent events, 1.0 otherwise, and normalized result in [0, 100]
     - **Validates: Requirements 8.2**
 
-  - [ ] 10.3 Implement leaderboard service in `app/services/leaderboard_service.py`
+  - [x] 10.3 Implement leaderboard service in `app/services/leaderboard_service.py`
     - Write `get_leaderboard(db) -> list[BrandLeaderboardEntry]` returning brands sorted by severity_score descending, each with brand name, affected product count, average deception gap, severity score, last-updated timestamp, and total verified event count
     - Write `get_brand_detail(brand_id: str, db) -> BrandDetail` returning only verified events for that brand with links to product receipts
     - _Requirements: 8.1, 8.3, 8.4, 8.6_
 
-  - [ ] 10.4 Implement leaderboard router in `app/routers/leaderboard.py`
+  - [x] 10.4 Implement leaderboard router in `app/routers/leaderboard.py`
     - Wire `GET /api/v1/leaderboard` and `GET /api/v1/leaderboard/{brand_id}` to the leaderboard service; return 404 when brand not found
     - _Requirements: 8.1, 8.4_
 
@@ -179,13 +179,13 @@ Tasks are sequenced for the fastest path to a working demo: seed data first, the
   - **Property 19: Brand detail contains only verified events for that brand** — `st.lists(st.builds(ShrinkflationEvent))`; assert all events have `verification_status == "verified"` and matching `brand_id`
   - **Validates: Requirements 8.1, 8.3, 8.4**
 
-- [ ] 12. Backend: Crowdsourced Reporting <!-- Aneesh -->
-  - [ ] 12.1 Implement report service in `app/services/report_service.py`
+- [x] 12. Backend: Crowdsourced Reporting <!-- Aneesh -->
+  - [x] 12.1 Implement report service in `app/services/report_service.py`
     - Write `submit_report(submission: ReportSubmission, db) -> CrowdsourcedReport` that validates required fields (product name, brand, before-quantity, after-quantity, date), persists the report with `verification_status="unverified"` and a UUID `submission_id`, and returns the stored record
     - Write `auto_verify_report(report_id: str, db, off_client) -> CrowdsourcedReport` that cross-checks the report against OFF data; if matched, set `verification_status="verified"` and populate `confirming_source`
     - _Requirements: 9.2, 9.3, 9.4, 9.5_
 
-  - [ ] 12.2 Implement report router in `app/routers/reports.py`
+  - [x] 12.2 Implement report router in `app/routers/reports.py`
     - Wire `POST /api/v1/reports` to accept multipart form data (report fields + optional image); validate image as JPEG or PNG and ≤ 5 MB; return HTTP 422 with structured error on validation failure; return confirmation with `submission_id` on success
     - _Requirements: 9.1, 9.2, 9.3, 9.6_
 
@@ -203,18 +203,18 @@ Tasks are sequenced for the fastest path to a working demo: seed data first, the
   - On successful submission, display confirmation message with the returned `submission_id`
   - _Requirements: 9.1, 9.2, 9.3, 9.6_
 
-- [ ] 14. Backend: Grocery List Calculator <!-- Aneesh -->
-  - [ ] 14.1 Implement calculator service in `app/services/calculator_service.py`
+- [x] 14. Backend: Grocery List Calculator <!-- Aneesh -->
+  - [x] 14.1 Implement calculator service in `app/services/calculator_service.py`
     - Write `calculate_grocery_list(request: GroceryListRequest, db, bls_client) -> GroceryListResponse` that for each item: validates `weekly_quantity` in [1, 52], retrieves current and 2019-baseline per-unit prices, computes `annual_hidden_cost = (current_per_unit - baseline_per_unit) * weekly_quantity * 52`, and sums all item costs into `total_annual_hidden_cost`
     - Return `has_data=False` with "No shrinkflation data available" for items with no verified data
     - _Requirements: 10.1, 10.2, 10.3, 10.4, 10.5_
 
-  - [ ] 14.2 Implement CSV/PDF export in `app/services/calculator_service.py`
+  - [x] 14.2 Implement CSV/PDF export in `app/services/calculator_service.py`
     - Write `export_csv(results: GroceryListResponse) -> str` generating a CSV with columns: product name, weekly quantity, baseline per-unit price, current per-unit price, annual hidden cost, source citations
     - Write `export_pdf(results: GroceryListResponse) -> bytes` generating a PDF with the same data using a lightweight library (e.g., reportlab or fpdf2)
     - _Requirements: 10.6_
 
-  - [ ] 14.3 Implement calculator router in `app/routers/calculator.py`
+  - [x] 14.3 Implement calculator router in `app/routers/calculator.py`
     - Wire `POST /api/v1/calculator` to the calculator service; add `GET /api/v1/calculator/export?format=csv|pdf` for export
     - _Requirements: 10.1, 10.6_
 
@@ -237,7 +237,7 @@ Tasks are sequenced for the fastest path to a working demo: seed data first, the
   - Implement `GET /api/v1/sources` router in `app/routers/sources.py` returning the data sources list
   - _Requirements: 12.4_
 
-- [ ] 17. Remaining property-based tests <!-- Aneesh -->
+- [x] 17. Remaining property-based tests <!-- Aneesh -->
   - [ ]* 17.1 Write property tests for search result fields (P2, P4) <!-- Aneesh -->
     - **Property 2: Search results contain all required display fields** — `st.builds(ProductSearchResult)`; assert non-null name, brand, quantity, unit, and verification_status in {"verified","unverified"}
     - **Property 4: UPC exact-match invariant** — `st.from_regex(r'\d{8,14}')`; assert returned product UPC equals submitted UPC
