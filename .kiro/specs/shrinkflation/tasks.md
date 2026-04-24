@@ -22,7 +22,7 @@ Tasks are sequenced for the fastest path to a working demo: seed data first, the
   - Wire `app/main.py` to create all DB tables on startup via `Base.metadata.create_all`
   - _Requirements: 1.1, 2.1, 11.1_
 
-- [ ] 2. Seed database with real shrinkflation data <!-- Deepak -->
+- [x] 2. Seed database with real shrinkflation data <!-- Deepak -->
   - Create `app/seed/seed_data.json` containing 20–30 verified shrinkflation examples covering at least 10 brands and 5 grocery categories (snacks, beverages, dairy, cereals, household goods); each entry must include product name, UPC, brand, at least 2 quantity data points with dates, at least 1 price data point, and a source citation URL per data point
   - Write `app/seed/loader.py` that reads `seed_data.json` and upserts Products, Brands, ShrinkflationEvents, and PricePoints into SQLite on app startup; call it from the FastAPI `startup` event in `main.py`
   - Write a build-time script `scripts/check_seed_urls.py` that HTTP-checks every source URL in `seed_data.json` and prints a report of broken links
@@ -61,35 +61,35 @@ Tasks are sequenced for the fastest path to a working demo: seed data first, the
     - **Property 6: Cumulative quantity reduction formula** — `st.lists(st.floats(min_value=0.1), min_size=2)`; assert formula matches
     - **Validates: Requirements 3.4**
 
-- [ ] 5. Backend: BLS API client and receipt service <!-- Deepak -->
-  - [ ] 5.1 Implement BLS API client in `app/services/bls_client.py`
+- [x] 5. Backend: BLS API client and receipt service <!-- Deepak -->
+  - [x] 5.1 Implement BLS API client in `app/services/bls_client.py`
     - Write `fetch_bls_series(series_id: str, start_year: int, end_year: int) -> list[dict]` calling BLS Public Data API v2; persist results to `BLSCache` table with `fetched_at` and `bls_vintage_date`
     - On cache hit (same series_id, fetched within 24 hours), return cached data without calling BLS
     - On BLS API failure, return cached data if available; raise `BLSUnavailableError` if no cache exists
     - _Requirements: 4.2, 6.1, 12.3_
 
-  - [ ] 5.2 Implement receipt service in `app/services/receipt_service.py`
+  - [x] 5.2 Implement receipt service in `app/services/receipt_service.py`
     - Write `build_receipt(product_id: str, db, bls_client) -> ShrinkflationReceipt` that assembles quantity timeline, price timeline (BLS preferred, seed fallback), per-unit timeline, deception gap, cumulative reduction, and source citations
     - Attach `data_last_updated` (now) and `staleness_warning` when `off_last_updated` is > 180 days ago
     - _Requirements: 3.1, 3.2, 4.1, 4.2, 5.2, 6.1, 7.1, 12.1, 12.2_
 
-  - [ ] 5.3 Implement receipt router in `app/routers/receipt.py`
+  - [x] 5.3 Implement receipt router in `app/routers/receipt.py`
     - Wire `GET /api/v1/receipt/{product_id}` to `receipt_service.build_receipt`; return 404 when product not found; return 503 with fallback notice when BLS is unavailable and no cache exists
     - _Requirements: 3.1, 4.1, 6.6, 12.1_
 
-- [ ] 6. Backend: Product search endpoints <!-- Deepak -->
-  - [ ] 6.1 Implement Open Food Facts client in `app/services/off_client.py`
+- [x] 6. Backend: Product search endpoints <!-- Deepak -->
+  - [x] 6.1 Implement Open Food Facts client in `app/services/off_client.py`
     - Write `search_by_name(query: str) -> list[dict]` and `search_by_upc(upc: str) -> dict | None` calling the OFF API v2; cache responses in-memory with a 1-hour TTL
     - On OFF API failure, raise `OFFUnavailableError`
     - _Requirements: 1.2, 1.5, 2.2_
 
-  - [ ] 6.2 Implement search service in `app/services/search_service.py`
+  - [x] 6.2 Implement search service in `app/services/search_service.py`
     - Write `search_products(query: str, db, off_client) -> list[ProductSearchResult]` merging seed DB results with OFF results; deduplicate by UPC; mark each result as "verified" or "unverified"
     - Write `search_by_upc(upc: str, db, off_client) -> ProductSearchResult | None`
     - On `OFFUnavailableError`, serve seed-only results and set `off_unavailable=True` in the response
     - _Requirements: 1.2, 1.4, 1.5, 2.2_
 
-  - [ ] 6.3 Implement search router in `app/routers/search.py`
+  - [x] 6.3 Implement search router in `app/routers/search.py`
     - Wire `GET /api/v1/search?q={name}` and `GET /api/v1/search?upc={code}` to the search service
     - Validate name length (1–200 chars) and UPC format (8–14 digits, numeric only); return HTTP 422 with structured error body on validation failure
     - _Requirements: 1.1, 1.3, 2.1, 2.5_
