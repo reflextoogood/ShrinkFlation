@@ -1,11 +1,15 @@
 # Python
-backend/__pycache__/
-backend/*.pyc
-backend/.pytest_cache/
-backend/shrinkflation.db
-backend/.hypothesis/
-backend/venv/
-backend/.venv/
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+shrinkflation.db
+.hypothesis/
+venv/
+.venv/
+*.egg-info/
 
 # Node
 frontend/node_modules/
