@@ -126,3 +126,19 @@ export interface GroceryListResponse {
   total_annual_hidden_cost: number
   methodology: string
 }
+
+export interface BrandDetailEvent {
+  product_id: string
+  product_name: string
+  event_date: string
+  quantity_before: number
+  quantity_after: number
+  quantity_unit: string
+}
+
+export interface BrandDetail {
+  id: string
+  name: string
+  severity_score: number
+  events: BrandDetailEvent[]
+}
