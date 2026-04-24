@@ -1,5 +1,13 @@
 # Implementation Plan: ShrinkFlation
 
+## Team Assignments
+
+| Person | Name   | Role                        |
+|--------|--------|-----------------------------|
+| A      | Deepak | Backend Foundation          |
+| B      | Aneesh | Backend Features & Tests    |
+| C      | Vijay  | Frontend                    |
+
 ## Overview
 
 Tasks are sequenced for the fastest path to a working demo: seed data first, then one end-to-end Shrinkflation Receipt (backend + frontend), then the remaining features (Brand Leaderboard, Crowdsourced Reporting, Grocery Calculator), and finally tests and polish. Infrastructure is kept minimal — just enough to run each feature as it is added.
@@ -8,28 +16,28 @@ Tasks are sequenced for the fastest path to a working demo: seed data first, the
 
 ## Tasks
 
-- [x] 1. Minimal project scaffolding
+- [x] 1. Minimal project scaffolding <!-- Deepak -->
   - Create `backend/` directory with `app/main.py` (FastAPI app with CORS, health endpoint), `app/db/session.py` (SQLite engine + session factory), `app/models/db.py` (SQLAlchemy ORM models for Product, Brand, ShrinkflationEvent, PricePoint, CrowdsourcedReport, BLSCache), and `requirements.txt` pinning FastAPI, SQLAlchemy, Pydantic, Hypothesis, pytest, httpx, python-multipart
   - Create `frontend/` directory with a Vite + React + TypeScript scaffold (`npm create vite`), install recharts, and add `src/api/client.ts` as a typed fetch wrapper pointing to `http://localhost:8000`
   - Wire `app/main.py` to create all DB tables on startup via `Base.metadata.create_all`
   - _Requirements: 1.1, 2.1, 11.1_
 
-- [ ] 2. Seed database with real shrinkflation data
+- [ ] 2. Seed database with real shrinkflation data <!-- Deepak -->
   - Create `app/seed/seed_data.json` containing 20–30 verified shrinkflation examples covering at least 10 brands and 5 grocery categories (snacks, beverages, dairy, cereals, household goods); each entry must include product name, UPC, brand, at least 2 quantity data points with dates, at least 1 price data point, and a source citation URL per data point
   - Write `app/seed/loader.py` that reads `seed_data.json` and upserts Products, Brands, ShrinkflationEvents, and PricePoints into SQLite on app startup; call it from the FastAPI `startup` event in `main.py`
   - Write a build-time script `scripts/check_seed_urls.py` that HTTP-checks every source URL in `seed_data.json` and prints a report of broken links
   - _Requirements: 11.1, 11.2, 11.3, 11.4_
 
-- [ ] 3. Checkpoint — seed data loads cleanly
+- [ ] 3. Checkpoint — seed data loads cleanly <!-- Deepak -->
   - Ensure all tests pass, ask the user if questions arise.
 
-- [-] 4. Backend: Shrinkflation Receipt calculation engine
+- [-] 4. Backend: Shrinkflation Receipt calculation engine <!-- Deepak -->
   - [x] 4.1 Implement per-unit price calculation in `app/calculations/per_unit.py`
     - Write `compute_per_unit_price(price: float, quantity: float) -> float` and `build_per_unit_timeline(price_points, quantity_events) -> list[PerUnitDataPoint]` that excludes years with missing price or quantity
     - Write `compute_per_unit_inflation_pct(timeline: list[PerUnitDataPoint]) -> float` using earliest-to-latest formula
     - _Requirements: 5.1, 5.3, 5.5_
 
-  - [ ]* 4.2 Write property tests for per-unit calculations (P9, P10, P11)
+  - [ ]* 4.2 Write property tests for per-unit calculations (P9, P10, P11) <!-- Deepak -->
     - **Property 9: Per-unit price formula correctness** — `st.floats(min_value=0.01)` for price and quantity; assert `result == price / quantity` within tolerance
     - **Property 10: Per-unit timeline excludes incomplete years** — `st.lists(st.builds(YearlyData))` with optional fields; assert no year with missing price or quantity appears in output
     - **Property 11: Per-unit inflation percentage formula** — `st.lists(st.floats(min_value=0.01), min_size=2)`; assert `(last - first) / first * 100`
@@ -40,7 +48,7 @@ Tasks are sequenced for the fastest path to a working demo: seed data first, the
     - Write `get_cpi_series_for_category(category: str) -> str` using the BLS series mapping table; fall back to `CUUR0000SAF` when no category match
     - _Requirements: 6.1, 6.2, 6.3, 6.5_
 
-  - [ ]* 4.4 Write property tests for deception gap (P12, P13)
+  - [ ]* 4.4 Write property tests for deception gap (P12, P13) <!-- Deepak -->
     - **Property 12: Deception gap formula correctness** — `st.floats()` for per-unit inflation and CPI; assert `gap == per_unit_inflation_pct - cpi_pct`
     - **Property 13: Deception gap color threshold classification** — `st.floats(min_value=0)`; assert green/yellow/red boundaries are exact
     - **Validates: Requirements 6.2, 6.3**
@@ -49,11 +57,11 @@ Tasks are sequenced for the fastest path to a working demo: seed data first, the
     - Write `compute_cumulative_reduction_pct(quantity_events: list) -> float` using `(first - last) / first * 100`
     - _Requirements: 3.4_
 
-  - [ ]* 4.6 Write property test for cumulative reduction formula (P6)
+  - [ ]* 4.6 Write property test for cumulative reduction formula (P6) <!-- Deepak -->
     - **Property 6: Cumulative quantity reduction formula** — `st.lists(st.floats(min_value=0.1), min_size=2)`; assert formula matches
     - **Validates: Requirements 3.4**
 
-- [ ] 5. Backend: BLS API client and receipt service
+- [ ] 5. Backend: BLS API client and receipt service <!-- Deepak -->
   - [ ] 5.1 Implement BLS API client in `app/services/bls_client.py`
     - Write `fetch_bls_series(series_id: str, start_year: int, end_year: int) -> list[dict]` calling BLS Public Data API v2; persist results to `BLSCache` table with `fetched_at` and `bls_vintage_date`
     - On cache hit (same series_id, fetched within 24 hours), return cached data without calling BLS
@@ -69,7 +77,7 @@ Tasks are sequenced for the fastest path to a working demo: seed data first, the
     - Wire `GET /api/v1/receipt/{product_id}` to `receipt_service.build_receipt`; return 404 when product not found; return 503 with fallback notice when BLS is unavailable and no cache exists
     - _Requirements: 3.1, 4.1, 6.6, 12.1_
 
-- [ ] 6. Backend: Product search endpoints
+- [ ] 6. Backend: Product search endpoints <!-- Deepak -->
   - [ ] 6.1 Implement Open Food Facts client in `app/services/off_client.py`
     - Write `search_by_name(query: str) -> list[dict]` and `search_by_upc(upc: str) -> dict | None` calling the OFF API v2; cache responses in-memory with a 1-hour TTL
     - On OFF API failure, raise `OFFUnavailableError`
@@ -86,16 +94,16 @@ Tasks are sequenced for the fastest path to a working demo: seed data first, the
     - Validate name length (1–200 chars) and UPC format (8–14 digits, numeric only); return HTTP 422 with structured error body on validation failure
     - _Requirements: 1.1, 1.3, 2.1, 2.5_
 
-  - [ ]* 6.4 Write property tests for input validation (P1, P3)
+  - [ ]* 6.4 Write property tests for input validation (P1, P3) <!-- Deepak -->
     - **Property 1: Input validation rejects out-of-range queries** — `st.text()` with lengths 0, 1, 200, 201+; assert accept/reject boundary
     - **Property 3: UPC validation rejects invalid inputs** — `st.text()` with non-numeric chars, lengths < 8 and > 14; assert all rejected
     - **Validates: Requirements 1.1, 2.1, 2.5**
 
-- [ ] 7. Checkpoint — one working end-to-end Shrinkflation Receipt
+- [ ] 7. Checkpoint — one working end-to-end Shrinkflation Receipt <!-- Deepak -->
   - Start the FastAPI server (`uvicorn app.main:app --reload`) and verify that `GET /api/v1/receipt/{seed_product_id}` returns a full receipt JSON with quantity timeline, price timeline, per-unit timeline, deception gap, and source citations for at least one seed product.
   - Ensure all tests pass, ask the user if questions arise.
 
-- [ ] 8. Frontend: Shrinkflation Receipt rendering
+- [ ] 8. Frontend: Shrinkflation Receipt rendering <!-- Vijay -->
   - [ ] 8.1 Implement `SearchBar` component (`src/components/SearchBar/`)
     - Render a text input (name search) and a numeric input (UPC search) with inline validation: reject empty submit, reject name > 200 chars, reject UPC with non-numeric chars or length outside 8–14
     - On submit, call `GET /api/v1/search?q=` or `GET /api/v1/search?upc=` via `client.ts`; navigate directly to receipt page when UPC returns a single match
@@ -137,16 +145,16 @@ Tasks are sequenced for the fastest path to a working demo: seed data first, the
     - Wire `useReceipt` hook to `GET /api/v1/receipt/{product_id}`
     - _Requirements: 5.3, 5.4, 12.1, 12.2_
 
-- [ ] 9. Checkpoint — demo-ready: search → receipt end-to-end in browser
+- [ ] 9. Checkpoint — demo-ready: search → receipt end-to-end in browser <!-- Vijay -->
   - Verify in the browser that a user can type a product name, see search results with verified badges, click a result, and see the full Shrinkflation Receipt with all charts, deception gap badge, and source citations rendered correctly for at least one seed product.
   - Ensure all tests pass, ask the user if questions arise.
 
-- [ ] 10. Backend: Brand Leaderboard
+- [ ] 10. Backend: Brand Leaderboard <!-- Aneesh -->
   - [ ] 10.1 Implement severity score calculation in `app/calculations/severity_score.py`
     - Write `compute_severity_score(events: list[ShrinkflationEvent]) -> float` applying recency weighting (2× for events within last 3 years) and normalizing to 0–100
     - _Requirements: 8.2_
 
-  - [ ]* 10.2 Write property tests for severity score (P17)
+  - [ ]* 10.2 Write property tests for severity score (P17) <!-- Aneesh -->
     - **Property 17: Severity score formula correctness** — `st.lists(st.builds(ShrinkflationEvent), min_size=1)`; assert recency_weight=2.0 for recent events, 1.0 otherwise, and normalized result in [0, 100]
     - **Validates: Requirements 8.2**
 
@@ -159,19 +167,19 @@ Tasks are sequenced for the fastest path to a working demo: seed data first, the
     - Wire `GET /api/v1/leaderboard` and `GET /api/v1/leaderboard/{brand_id}` to the leaderboard service; return 404 when brand not found
     - _Requirements: 8.1, 8.4_
 
-- [ ] 11. Frontend: Brand Leaderboard
+- [ ] 11. Frontend: Brand Leaderboard <!-- Vijay -->
   - Implement `BrandLeaderboard` component (`src/components/BrandLeaderboard/`) rendering a ranked table with brand name, affected products, average deception gap, and severity score; clicking a row navigates to a brand detail view showing all verified events with links to individual receipts
   - Display last-updated timestamp and total verified event count below the table
   - Wire `useLeaderboard` hook to `GET /api/v1/leaderboard` and `GET /api/v1/leaderboard/{brand_id}`
   - _Requirements: 8.1, 8.3, 8.4, 8.6_
 
-- [ ]* 11.1 Write property tests for leaderboard invariants (P16, P18, P19)
+- [ ]* 11.1 Write property tests for leaderboard invariants (P16, P18, P19) <!-- Aneesh -->
   - **Property 16: Leaderboard descending sort invariant** — `st.lists(st.builds(BrandEntry), min_size=2)`; assert `brands[i].severity_score >= brands[i+1].severity_score` for all adjacent pairs
   - **Property 18: Leaderboard entry required fields** — `st.builds(BrandEntry)`; assert non-null brand name, affected products, avg deception gap, severity score
   - **Property 19: Brand detail contains only verified events for that brand** — `st.lists(st.builds(ShrinkflationEvent))`; assert all events have `verification_status == "verified"` and matching `brand_id`
   - **Validates: Requirements 8.1, 8.3, 8.4**
 
-- [ ] 12. Backend: Crowdsourced Reporting
+- [ ] 12. Backend: Crowdsourced Reporting <!-- Aneesh -->
   - [ ] 12.1 Implement report service in `app/services/report_service.py`
     - Write `submit_report(submission: ReportSubmission, db) -> CrowdsourcedReport` that validates required fields (product name, brand, before-quantity, after-quantity, date), persists the report with `verification_status="unverified"` and a UUID `submission_id`, and returns the stored record
     - Write `auto_verify_report(report_id: str, db, off_client) -> CrowdsourcedReport` that cross-checks the report against OFF data; if matched, set `verification_status="verified"` and populate `confirming_source`
@@ -181,7 +189,7 @@ Tasks are sequenced for the fastest path to a working demo: seed data first, the
     - Wire `POST /api/v1/reports` to accept multipart form data (report fields + optional image); validate image as JPEG or PNG and ≤ 5 MB; return HTTP 422 with structured error on validation failure; return confirmation with `submission_id` on success
     - _Requirements: 9.1, 9.2, 9.3, 9.6_
 
-  - [ ]* 12.3 Write property tests for report submission (P20, P21, P22, P23, P24)
+  - [ ]* 12.3 Write property tests for report submission (P20, P21, P22, P23, P24) <!-- Aneesh -->
     - **Property 20: Report validation rejects incomplete reports** — `st.builds(ReportSubmission)` with nulled required fields; assert API returns 422 and does not persist
     - **Property 21: Submission IDs are unique** — `st.lists(st.builds(ReportSubmission), min_size=2)`; assert all `submission_id` values are distinct
     - **Property 22: New reports start as unverified** — `st.builds(ReportSubmission)`; assert `verification_status == "unverified"` on creation
@@ -189,13 +197,13 @@ Tasks are sequenced for the fastest path to a working demo: seed data first, the
     - **Property 24: Image upload validation rejects invalid files** — `st.binary()` with sizes > 5 MB and non-JPEG/PNG MIME types; assert rejection with inline error
     - **Validates: Requirements 9.2, 9.3, 9.4, 9.5, 9.6**
 
-- [ ] 13. Frontend: Crowdsourced Report Form
+- [ ] 13. Frontend: Crowdsourced Report Form <!-- Vijay -->
   - Implement `ReportForm` component (`src/components/ReportForm/`) with fields: product name, UPC (optional), brand, before-quantity + unit, after-quantity + unit, date (month/year), price at change (optional), image upload (JPEG/PNG, max 5 MB)
   - Validate required fields client-side before submit; validate image size and type client-side with inline error messages; pre-fill UPC when navigated from a "Product not found" UPC search
   - On successful submission, display confirmation message with the returned `submission_id`
   - _Requirements: 9.1, 9.2, 9.3, 9.6_
 
-- [ ] 14. Backend: Grocery List Calculator
+- [ ] 14. Backend: Grocery List Calculator <!-- Aneesh -->
   - [ ] 14.1 Implement calculator service in `app/services/calculator_service.py`
     - Write `calculate_grocery_list(request: GroceryListRequest, db, bls_client) -> GroceryListResponse` that for each item: validates `weekly_quantity` in [1, 52], retrieves current and 2019-baseline per-unit prices, computes `annual_hidden_cost = (current_per_unit - baseline_per_unit) * weekly_quantity * 52`, and sums all item costs into `total_annual_hidden_cost`
     - Return `has_data=False` with "No shrinkflation data available" for items with no verified data
@@ -210,32 +218,32 @@ Tasks are sequenced for the fastest path to a working demo: seed data first, the
     - Wire `POST /api/v1/calculator` to the calculator service; add `GET /api/v1/calculator/export?format=csv|pdf` for export
     - _Requirements: 10.1, 10.6_
 
-  - [ ]* 14.4 Write property tests for calculator (P25, P26, P27, P28)
+  - [ ]* 14.4 Write property tests for calculator (P25, P26, P27, P28) <!-- Aneesh -->
     - **Property 25: Grocery list weekly quantity validation** — `st.integers()` outside [1, 52]; assert calculator returns validation error
     - **Property 26: Annual hidden cost formula correctness** — `st.floats(min_value=0.01)` for prices, `st.integers(1, 52)` for quantity; assert `(current - baseline) * qty * 52`
     - **Property 27: Total grocery list cost is sum of item costs** — `st.lists(st.builds(GroceryItemResult), min_size=1)`; assert `total == sum(item.annual_hidden_cost)`
     - **Property 28: CSV export contains source citations for all items** — `st.lists(st.builds(GroceryItemResult), min_size=1)`; assert N rows each with non-empty citation columns
     - **Validates: Requirements 10.1, 10.3, 10.4, 10.6**
 
-- [ ] 15. Frontend: Grocery List Calculator
+- [ ] 15. Frontend: Grocery List Calculator <!-- Vijay -->
   - Implement `GroceryCalculator` component (`src/components/GroceryCalculator/`) with an add-product interface (name or UPC search), weekly quantity input (1–52), per-item deception gap and annual hidden cost display, total annual hidden cost summary, and export buttons (PDF and CSV)
   - Show "No shrinkflation data available" for items with `has_data=false`
   - Display the calculation methodology formula beneath the total
   - Wire `useGroceryList` hook to `POST /api/v1/calculator`
   - _Requirements: 10.1, 10.2, 10.3, 10.4, 10.5, 10.6_
 
-- [ ] 16. Data Sources page and remaining backend routes
+- [ ] 16. Data Sources page and remaining backend routes <!-- Vijay + Aneesh -->
   - Implement `DataSourcesPage` component (`src/components/DataSourcesPage/`) listing Open Food Facts, BLS, and the seed database with update frequencies and terms-of-use links
   - Implement `GET /api/v1/sources` router in `app/routers/sources.py` returning the data sources list
   - _Requirements: 12.4_
 
-- [ ] 17. Remaining property-based tests
-  - [ ]* 17.1 Write property tests for search result fields (P2, P4)
+- [ ] 17. Remaining property-based tests <!-- Aneesh -->
+  - [ ]* 17.1 Write property tests for search result fields (P2, P4) <!-- Aneesh -->
     - **Property 2: Search results contain all required display fields** — `st.builds(ProductSearchResult)`; assert non-null name, brand, quantity, unit, and verification_status in {"verified","unverified"}
     - **Property 4: UPC exact-match invariant** — `st.from_regex(r'\d{8,14}')`; assert returned product UPC equals submitted UPC
     - **Validates: Requirements 1.4, 2.2**
 
-  - [ ]* 17.2 Write property tests for receipt data (P5, P7, P8, P14, P15, P30)
+  - [ ]* 17.2 Write property tests for receipt data (P5, P7, P8, P14, P15, P30) <!-- Aneesh -->
     - **Property 5: Quantity timeline data completeness** — `st.lists(st.builds(ShrinkflationEvent), min_size=1)`; assert exactly N event data points each with non-null quantity, year, and source citation
     - **Property 7: Price data source priority** — `st.booleans()` for BLS availability; assert `source_type=="bls"` when BLS data exists, `"seed"` otherwise
     - **Property 8: Tooltip completeness for timeline data points** — `st.builds(QuantityDataPoint | PriceDataPoint)`; assert tooltip payload has value, year, and non-empty source identifier
@@ -244,53 +252,53 @@ Tasks are sequenced for the fastest path to a working demo: seed data first, the
     - **Property 30: Receipt data freshness metadata** — `st.datetimes()` for `off_last_updated`; assert non-null `data_last_updated`, staleness warning when > 180 days, non-null `bls_vintage_date` for BLS points
     - **Validates: Requirements 3.1, 3.2, 3.3, 4.2, 4.3, 7.1, 7.2, 7.3, 7.4, 12.1, 12.2, 12.3**
 
-  - [ ]* 17.3 Write property test for seed database entry completeness (P29)
+  - [ ]* 17.3 Write property test for seed database entry completeness (P29) <!-- Aneesh -->
     - **Property 29: Seed database entry completeness** — iterate over all entries in `seed_data.json`; assert each has non-null product name, UPC, brand, ≥ 2 quantity data points with dates, ≥ 1 price data point, and ≥ 1 source citation per data point
     - **Validates: Requirements 11.2**
 
-- [ ] 18. Frontend component tests (Vitest + React Testing Library)
-  - [ ]* 18.1 Write snapshot and unit tests for `DeceptionGapBadge`
+- [ ] 18. Frontend component tests (Vitest + React Testing Library) <!-- Vijay -->
+  - [ ]* 18.1 Write snapshot and unit tests for `DeceptionGapBadge` <!-- Vijay -->
     - Snapshot tests for green (gap=5), yellow (gap=15), and red (gap=30) color rendering
     - Test "Deception Gap: insufficient data" renders when `deception_gap` is null
     - Test CPI fallback label renders when `is_fallback_cpi` is true
     - _Requirements: 6.3, 6.5, 6.6_
 
-  - [ ]* 18.2 Write snapshot tests for `SourceCitation`
+  - [ ]* 18.2 Write snapshot tests for `SourceCitation` <!-- Vijay -->
     - Snapshot tests for OFF, BLS, and seed citation formats
     - Test "Unverified — contribute data" renders for unverified source
     - _Requirements: 7.1, 7.2, 7.3, 7.4, 7.5_
 
-  - [ ]* 18.3 Write unit tests for `SearchBar` validation
+  - [ ]* 18.3 Write unit tests for `SearchBar` validation <!-- Vijay -->
     - Test empty submit is blocked; test 201-character name is rejected with inline error; test non-numeric UPC is rejected; test UPC < 8 digits is rejected
     - _Requirements: 1.1, 2.1, 2.5_
 
-  - [ ]* 18.4 Write unit tests for `ReportForm` validation
+  - [ ]* 18.4 Write unit tests for `ReportForm` validation <!-- Vijay -->
     - Test required-field validation blocks submission; test image > 5 MB is rejected client-side with inline error; test non-JPEG/PNG file is rejected
     - _Requirements: 9.2, 9.6_
 
-- [ ] 19. Integration tests
-  - [ ]* 19.1 Write BLS cache integration test
+- [ ] 19. Integration tests <!-- Aneesh -->
+  - [ ]* 19.1 Write BLS cache integration test <!-- Aneesh -->
     - Fetch a BLS series once; mock the BLS HTTP endpoint; assert the second call returns cached data without hitting the network
     - _Requirements: 4.2_
 
-  - [ ]* 19.2 Write OFF fallback integration test
+  - [ ]* 19.2 Write OFF fallback integration test <!-- Aneesh -->
     - Mock OFF to return 503; call `GET /api/v1/search?q=chips`; assert response contains seed-only results and the fallback notice banner
     - _Requirements: 1.5_
 
-  - [ ]* 19.3 Write auto-verification pipeline integration test
+  - [ ]* 19.3 Write auto-verification pipeline integration test <!-- Aneesh -->
     - Submit a crowdsourced report matching a seed product; run auto-verify; assert `verification_status == "verified"` and `confirming_source` is non-null
     - _Requirements: 9.5_
 
-  - [ ]* 19.4 Write leaderboard refresh integration test
+  - [ ]* 19.4 Write leaderboard refresh integration test <!-- Aneesh -->
     - Verify a crowdsourced report; assert the affected brand's severity score is recalculated in the leaderboard response
     - _Requirements: 8.5_
 
-- [ ] 20. Smoke tests and startup assertions
+- [ ] 20. Smoke tests and startup assertions <!-- Deepak -->
   - Add startup assertions in `app/main.py` (or a `tests/test_smoke.py` run at startup): assert `len(events) >= 20`, `len(distinct_brands) >= 10`, `len(distinct_categories) >= 5` after seed load
   - Assert all BLS category-to-series mappings in `bls_client.py` resolve to known series IDs
   - _Requirements: 11.1, 11.3_
 
-- [ ] 21. Final checkpoint — all features working, all tests passing
+- [ ] 21. Final checkpoint — all features working, all tests passing <!-- Deepak + Aneesh + Vijay -->
   - Run `pytest tests/ --hypothesis-seed=0` and `vitest --run`; fix any failures
   - Verify the full user journey in the browser: search → receipt → leaderboard → report form → grocery calculator → export
   - Ensure all tests pass, ask the user if questions arise.
