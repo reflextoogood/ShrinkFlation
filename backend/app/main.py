@@ -1,5 +1,9 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from dotenv import load_dotenv
+
+load_dotenv()  # loads .env from the backend/ directory
+
 from app.db.session import engine, Base, SessionLocal
 from app.models import db as _models  # noqa: F401 — registers ORM models
 from app.routers import leaderboard, reports, calculator, receipt, search, agent

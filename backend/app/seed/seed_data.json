@@ -5,13 +5,36 @@
     "brand": "Frito-Lay",
     "category": "snacks",
     "quantity_events": [
-      {"year": 2010, "quantity_value": 14.5, "quantity_unit": "oz", "source_url": "https://www.fda.gov/food/nutrition-facts-label"},
-      {"year": 2016, "quantity_value": 13.0, "quantity_unit": "oz", "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"},
-      {"year": 2022, "quantity_value": 9.25, "quantity_unit": "oz", "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"}
+      {
+        "year": 2010,
+        "quantity_value": 14.5,
+        "quantity_unit": "oz",
+        "source_url": "https://www.fda.gov/food/nutrition-facts-label"
+      },
+      {
+        "year": 2016,
+        "quantity_value": 13.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 9.25,
+        "quantity_unit": "oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
     ],
     "price_points": [
-      {"year": 2016, "price_usd": 3.99, "source_url": "https://www.bls.gov/cpi/"},
-      {"year": 2022, "price_usd": 5.49, "source_url": "https://www.bls.gov/cpi/"}
+      {
+        "year": 2016,
+        "price_usd": 3.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 5.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
     ]
   },
   {
@@ -20,12 +43,30 @@
     "brand": "Tropicana",
     "category": "beverages",
     "quantity_events": [
-      {"year": 2009, "quantity_value": 64.0, "quantity_unit": "fl oz", "source_url": "https://www.consumerreports.org/cro/news/2009/01/tropicana-shrinks-its-orange-juice-container/index.htm"},
-      {"year": 2022, "quantity_value": 52.0, "quantity_unit": "fl oz", "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"}
+      {
+        "year": 2009,
+        "quantity_value": 64.0,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2009/01/tropicana-shrinks-its-orange-juice-container/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 52.0,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
     ],
     "price_points": [
-      {"year": 2009, "price_usd": 5.99, "source_url": "https://www.bls.gov/cpi/"},
-      {"year": 2022, "price_usd": 6.49, "source_url": "https://www.bls.gov/cpi/"}
+      {
+        "year": 2009,
+        "price_usd": 5.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 6.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
     ]
   },
   {
@@ -34,12 +75,30 @@
     "brand": "Nabisco",
     "category": "snacks",
     "quantity_events": [
-      {"year": 2012, "quantity_value": 16.0, "quantity_unit": "oz", "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"},
-      {"year": 2022, "quantity_value": 14.0, "quantity_unit": "oz", "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"}
+      {
+        "year": 2012,
+        "quantity_value": 16.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 14.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
     ],
     "price_points": [
-      {"year": 2012, "price_usd": 3.49, "source_url": "https://www.bls.gov/cpi/"},
-      {"year": 2022, "price_usd": 4.99, "source_url": "https://www.bls.gov/cpi/"}
+      {
+        "year": 2012,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
     ]
   },
   {
@@ -48,13 +107,36 @@
     "brand": "Procter & Gamble",
     "category": "household goods",
     "quantity_events": [
-      {"year": 2013, "quantity_value": 100.0, "quantity_unit": "fl oz", "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"},
-      {"year": 2019, "quantity_value": 92.0, "quantity_unit": "fl oz", "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"},
-      {"year": 2022, "quantity_value": 84.0, "quantity_unit": "fl oz", "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"}
+      {
+        "year": 2013,
+        "quantity_value": 100.0,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2019,
+        "quantity_value": 92.0,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 84.0,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
     ],
     "price_points": [
-      {"year": 2013, "price_usd": 11.99, "source_url": "https://www.bls.gov/cpi/"},
-      {"year": 2022, "price_usd": 13.99, "source_url": "https://www.bls.gov/cpi/"}
+      {
+        "year": 2013,
+        "price_usd": 11.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 13.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
     ]
   },
   {
@@ -63,12 +145,30 @@
     "brand": "General Mills",
     "category": "cereals",
     "quantity_events": [
-      {"year": 2011, "quantity_value": 18.0, "quantity_unit": "oz", "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"},
-      {"year": 2022, "quantity_value": 15.4, "quantity_unit": "oz", "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"}
+      {
+        "year": 2011,
+        "quantity_value": 18.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 15.4,
+        "quantity_unit": "oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
     ],
     "price_points": [
-      {"year": 2011, "price_usd": 4.29, "source_url": "https://www.bls.gov/cpi/"},
-      {"year": 2022, "price_usd": 5.79, "source_url": "https://www.bls.gov/cpi/"}
+      {
+        "year": 2011,
+        "price_usd": 4.29,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 5.79,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
     ]
   },
   {
@@ -77,13 +177,36 @@
     "brand": "Unilever",
     "category": "dairy",
     "quantity_events": [
-      {"year": 2008, "quantity_value": 64.0, "quantity_unit": "fl oz", "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"},
-      {"year": 2013, "quantity_value": 56.0, "quantity_unit": "fl oz", "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"},
-      {"year": 2022, "quantity_value": 48.0, "quantity_unit": "fl oz", "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"}
+      {
+        "year": 2008,
+        "quantity_value": 64.0,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2013,
+        "quantity_value": 56.0,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 48.0,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
     ],
     "price_points": [
-      {"year": 2008, "price_usd": 4.99, "source_url": "https://www.bls.gov/cpi/"},
-      {"year": 2022, "price_usd": 5.99, "source_url": "https://www.bls.gov/cpi/"}
+      {
+        "year": 2008,
+        "price_usd": 4.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 5.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
     ]
   },
   {
@@ -92,12 +215,30 @@
     "brand": "Kellogg's",
     "category": "snacks",
     "quantity_events": [
-      {"year": 2010, "quantity_value": 6.41, "quantity_unit": "oz", "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"},
-      {"year": 2022, "quantity_value": 5.57, "quantity_unit": "oz", "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"}
+      {
+        "year": 2010,
+        "quantity_value": 6.41,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 5.57,
+        "quantity_unit": "oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
     ],
     "price_points": [
-      {"year": 2010, "price_usd": 1.99, "source_url": "https://www.bls.gov/cpi/"},
-      {"year": 2022, "price_usd": 2.49, "source_url": "https://www.bls.gov/cpi/"}
+      {
+        "year": 2010,
+        "price_usd": 1.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 2.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
     ]
   },
   {
@@ -106,12 +247,30 @@
     "brand": "PepsiCo",
     "category": "beverages",
     "quantity_events": [
-      {"year": 2009, "quantity_value": 32.0, "quantity_unit": "fl oz", "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"},
-      {"year": 2022, "quantity_value": 28.0, "quantity_unit": "fl oz", "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"}
+      {
+        "year": 2009,
+        "quantity_value": 32.0,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 28.0,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
     ],
     "price_points": [
-      {"year": 2009, "price_usd": 1.29, "source_url": "https://www.bls.gov/cpi/"},
-      {"year": 2022, "price_usd": 1.79, "source_url": "https://www.bls.gov/cpi/"}
+      {
+        "year": 2009,
+        "price_usd": 1.29,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 1.79,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
     ]
   },
   {
@@ -120,12 +279,30 @@
     "brand": "Folgers",
     "category": "beverages",
     "quantity_events": [
-      {"year": 2010, "quantity_value": 39.0, "quantity_unit": "oz", "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"},
-      {"year": 2022, "quantity_value": 30.5, "quantity_unit": "oz", "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"}
+      {
+        "year": 2010,
+        "quantity_value": 39.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 30.5,
+        "quantity_unit": "oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
     ],
     "price_points": [
-      {"year": 2010, "price_usd": 9.99, "source_url": "https://www.bls.gov/cpi/"},
-      {"year": 2022, "price_usd": 10.99, "source_url": "https://www.bls.gov/cpi/"}
+      {
+        "year": 2010,
+        "price_usd": 9.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 10.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
     ]
   },
   {
@@ -134,12 +311,30 @@
     "brand": "Procter & Gamble",
     "category": "household goods",
     "quantity_events": [
-      {"year": 2012, "quantity_value": 120.0, "quantity_unit": "sheets", "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"},
-      {"year": 2022, "quantity_value": 98.0, "quantity_unit": "sheets", "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"}
+      {
+        "year": 2012,
+        "quantity_value": 120.0,
+        "quantity_unit": "sheets",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 98.0,
+        "quantity_unit": "sheets",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
     ],
     "price_points": [
-      {"year": 2012, "price_usd": 2.49, "source_url": "https://www.bls.gov/cpi/"},
-      {"year": 2022, "price_usd": 3.49, "source_url": "https://www.bls.gov/cpi/"}
+      {
+        "year": 2012,
+        "price_usd": 2.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
     ]
   },
   {
@@ -148,12 +343,30 @@
     "brand": "Nabisco",
     "category": "snacks",
     "quantity_events": [
-      {"year": 2011, "quantity_value": 18.0, "quantity_unit": "oz", "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"},
-      {"year": 2022, "quantity_value": 14.3, "quantity_unit": "oz", "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"}
+      {
+        "year": 2011,
+        "quantity_value": 18.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 14.3,
+        "quantity_unit": "oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
     ],
     "price_points": [
-      {"year": 2011, "price_usd": 3.49, "source_url": "https://www.bls.gov/cpi/"},
-      {"year": 2022, "price_usd": 5.49, "source_url": "https://www.bls.gov/cpi/"}
+      {
+        "year": 2011,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 5.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
     ]
   },
   {
@@ -162,26 +375,62 @@
     "brand": "Unilever",
     "category": "condiments",
     "quantity_events": [
-      {"year": 2013, "quantity_value": 30.0, "quantity_unit": "oz", "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"},
-      {"year": 2022, "quantity_value": 24.0, "quantity_unit": "oz", "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"}
+      {
+        "year": 2013,
+        "quantity_value": 30.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 24.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
     ],
     "price_points": [
-      {"year": 2013, "price_usd": 4.99, "source_url": "https://www.bls.gov/cpi/"},
-      {"year": 2022, "price_usd": 6.49, "source_url": "https://www.bls.gov/cpi/"}
+      {
+        "year": 2013,
+        "price_usd": 4.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 6.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
     ]
   },
   {
     "product_name": "Lay's Classic Potato Chips",
-    "upc": "028400090179",
+    "upc": "028400090180",
     "brand": "Frito-Lay",
     "category": "snacks",
     "quantity_events": [
-      {"year": 2010, "quantity_value": 10.0, "quantity_unit": "oz", "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"},
-      {"year": 2022, "quantity_value": 8.0, "quantity_unit": "oz", "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"}
+      {
+        "year": 2010,
+        "quantity_value": 10.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 8.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
     ],
     "price_points": [
-      {"year": 2010, "price_usd": 3.49, "source_url": "https://www.bls.gov/cpi/"},
-      {"year": 2022, "price_usd": 5.29, "source_url": "https://www.bls.gov/cpi/"}
+      {
+        "year": 2010,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 5.29,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
     ]
   },
   {
@@ -190,12 +439,30 @@
     "brand": "Kellogg's",
     "category": "cereals",
     "quantity_events": [
-      {"year": 2011, "quantity_value": 19.0, "quantity_unit": "oz", "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"},
-      {"year": 2022, "quantity_value": 13.5, "quantity_unit": "oz", "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"}
+      {
+        "year": 2011,
+        "quantity_value": 19.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 13.5,
+        "quantity_unit": "oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
     ],
     "price_points": [
-      {"year": 2011, "price_usd": 3.99, "source_url": "https://www.bls.gov/cpi/"},
-      {"year": 2022, "price_usd": 4.99, "source_url": "https://www.bls.gov/cpi/"}
+      {
+        "year": 2011,
+        "price_usd": 3.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
     ]
   },
   {
@@ -204,12 +471,30 @@
     "brand": "Hormel",
     "category": "condiments",
     "quantity_events": [
-      {"year": 2010, "quantity_value": 18.0, "quantity_unit": "oz", "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"},
-      {"year": 2022, "quantity_value": 16.3, "quantity_unit": "oz", "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"}
+      {
+        "year": 2010,
+        "quantity_value": 18.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 16.3,
+        "quantity_unit": "oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
     ],
     "price_points": [
-      {"year": 2010, "price_usd": 3.49, "source_url": "https://www.bls.gov/cpi/"},
-      {"year": 2022, "price_usd": 4.99, "source_url": "https://www.bls.gov/cpi/"}
+      {
+        "year": 2010,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
     ]
   },
   {
@@ -218,12 +503,30 @@
     "brand": "General Mills",
     "category": "dairy",
     "quantity_events": [
-      {"year": 2012, "quantity_value": 6.0, "quantity_unit": "oz", "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"},
-      {"year": 2022, "quantity_value": 5.3, "quantity_unit": "oz", "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"}
+      {
+        "year": 2012,
+        "quantity_value": 6.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 5.3,
+        "quantity_unit": "oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
     ],
     "price_points": [
-      {"year": 2012, "price_usd": 0.89, "source_url": "https://www.bls.gov/cpi/"},
-      {"year": 2022, "price_usd": 1.09, "source_url": "https://www.bls.gov/cpi/"}
+      {
+        "year": 2012,
+        "price_usd": 0.89,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 1.09,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
     ]
   },
   {
@@ -232,40 +535,94 @@
     "brand": "PepsiCo",
     "category": "beverages",
     "quantity_events": [
-      {"year": 2010, "quantity_value": 2.0, "quantity_unit": "liter", "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"},
-      {"year": 2022, "quantity_value": 1.77, "quantity_unit": "liter", "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"}
+      {
+        "year": 2010,
+        "quantity_value": 2.0,
+        "quantity_unit": "liter",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 1.77,
+        "quantity_unit": "liter",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
     ],
     "price_points": [
-      {"year": 2010, "price_usd": 1.99, "source_url": "https://www.bls.gov/cpi/"},
-      {"year": 2022, "price_usd": 2.49, "source_url": "https://www.bls.gov/cpi/"}
+      {
+        "year": 2010,
+        "price_usd": 1.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 2.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
     ]
   },
   {
     "product_name": "Charmin Ultra Soft Toilet Paper",
-    "upc": "037000863403",
+    "upc": "037000863404",
     "brand": "Procter & Gamble",
     "category": "household goods",
     "quantity_events": [
-      {"year": 2013, "quantity_value": 264.0, "quantity_unit": "sheets", "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"},
-      {"year": 2022, "quantity_value": 231.0, "quantity_unit": "sheets", "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"}
+      {
+        "year": 2013,
+        "quantity_value": 264.0,
+        "quantity_unit": "sheets",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 231.0,
+        "quantity_unit": "sheets",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
     ],
     "price_points": [
-      {"year": 2013, "price_usd": 1.49, "source_url": "https://www.bls.gov/cpi/"},
-      {"year": 2022, "price_usd": 1.99, "source_url": "https://www.bls.gov/cpi/"}
+      {
+        "year": 2013,
+        "price_usd": 1.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 1.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
     ]
   },
   {
-    "product_name": "Häagen-Dazs Vanilla Ice Cream",
+    "product_name": "Haagen-Dazs Vanilla Ice Cream",
     "upc": "074570000012",
-    "brand": "Nestlé",
+    "brand": "Nestle",
     "category": "dairy",
     "quantity_events": [
-      {"year": 2009, "quantity_value": 16.0, "quantity_unit": "fl oz", "source_url": "https://www.consumerreports.org/cro/news/2009/01/tropicana-shrinks-its-orange-juice-container/index.htm"},
-      {"year": 2022, "quantity_value": 14.0, "quantity_unit": "fl oz", "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"}
+      {
+        "year": 2009,
+        "quantity_value": 16.0,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2009/01/tropicana-shrinks-its-orange-juice-container/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 14.0,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
     ],
     "price_points": [
-      {"year": 2009, "price_usd": 3.99, "source_url": "https://www.bls.gov/cpi/"},
-      {"year": 2022, "price_usd": 5.49, "source_url": "https://www.bls.gov/cpi/"}
+      {
+        "year": 2009,
+        "price_usd": 3.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 5.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
     ]
   },
   {
@@ -274,12 +631,30 @@
     "brand": "Nabisco",
     "category": "snacks",
     "quantity_events": [
-      {"year": 2012, "quantity_value": 16.0, "quantity_unit": "oz", "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"},
-      {"year": 2022, "quantity_value": 13.7, "quantity_unit": "oz", "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"}
+      {
+        "year": 2012,
+        "quantity_value": 16.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 13.7,
+        "quantity_unit": "oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
     ],
     "price_points": [
-      {"year": 2012, "price_usd": 3.49, "source_url": "https://www.bls.gov/cpi/"},
-      {"year": 2022, "price_usd": 4.99, "source_url": "https://www.bls.gov/cpi/"}
+      {
+        "year": 2012,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
     ]
   },
   {
@@ -288,12 +663,30 @@
     "brand": "PepsiCo",
     "category": "cereals",
     "quantity_events": [
-      {"year": 2010, "quantity_value": 42.0, "quantity_unit": "oz", "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"},
-      {"year": 2022, "quantity_value": 30.0, "quantity_unit": "oz", "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"}
+      {
+        "year": 2010,
+        "quantity_value": 42.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 30.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
     ],
     "price_points": [
-      {"year": 2010, "price_usd": 4.49, "source_url": "https://www.bls.gov/cpi/"},
-      {"year": 2022, "price_usd": 5.49, "source_url": "https://www.bls.gov/cpi/"}
+      {
+        "year": 2010,
+        "price_usd": 4.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 5.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
     ]
   },
   {
@@ -302,12 +695,30 @@
     "brand": "Kraft Heinz",
     "category": "pasta",
     "quantity_events": [
-      {"year": 2010, "quantity_value": 7.25, "quantity_unit": "oz", "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"},
-      {"year": 2022, "quantity_value": 6.0, "quantity_unit": "oz", "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"}
+      {
+        "year": 2010,
+        "quantity_value": 7.25,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 6.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
     ],
     "price_points": [
-      {"year": 2010, "price_usd": 0.99, "source_url": "https://www.bls.gov/cpi/"},
-      {"year": 2022, "price_usd": 1.49, "source_url": "https://www.bls.gov/cpi/"}
+      {
+        "year": 2010,
+        "price_usd": 0.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 1.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
     ]
   },
   {
@@ -316,12 +727,30 @@
     "brand": "Mars",
     "category": "candy",
     "quantity_events": [
-      {"year": 2010, "quantity_value": 2.07, "quantity_unit": "oz", "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"},
-      {"year": 2022, "quantity_value": 1.86, "quantity_unit": "oz", "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"}
+      {
+        "year": 2010,
+        "quantity_value": 2.07,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 1.86,
+        "quantity_unit": "oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
     ],
     "price_points": [
-      {"year": 2010, "price_usd": 0.99, "source_url": "https://www.bls.gov/cpi/"},
-      {"year": 2022, "price_usd": 1.79, "source_url": "https://www.bls.gov/cpi/"}
+      {
+        "year": 2010,
+        "price_usd": 0.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 1.79,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
     ]
   },
   {
@@ -330,12 +759,30 @@
     "brand": "Conagra",
     "category": "frozen",
     "quantity_events": [
-      {"year": 2012, "quantity_value": 16.0, "quantity_unit": "oz", "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"},
-      {"year": 2022, "quantity_value": 12.0, "quantity_unit": "oz", "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"}
+      {
+        "year": 2012,
+        "quantity_value": 16.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 12.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
     ],
     "price_points": [
-      {"year": 2012, "price_usd": 1.99, "source_url": "https://www.bls.gov/cpi/"},
-      {"year": 2022, "price_usd": 2.49, "source_url": "https://www.bls.gov/cpi/"}
+      {
+        "year": 2012,
+        "price_usd": 1.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 2.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
     ]
   },
   {
@@ -344,12 +791,4042 @@
     "brand": "Coca-Cola",
     "category": "beverages",
     "quantity_events": [
-      {"year": 2010, "quantity_value": 59.0, "quantity_unit": "fl oz", "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"},
-      {"year": 2022, "quantity_value": 52.0, "quantity_unit": "fl oz", "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"}
+      {
+        "year": 2010,
+        "quantity_value": 59.0,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 52.0,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
     ],
     "price_points": [
-      {"year": 2010, "price_usd": 3.99, "source_url": "https://www.bls.gov/cpi/"},
-      {"year": 2022, "price_usd": 4.99, "source_url": "https://www.bls.gov/cpi/"}
+      {
+        "year": 2010,
+        "price_usd": 3.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Cheetos Crunchy",
+    "upc": "028400090193",
+    "brand": "Frito-Lay",
+    "category": "snacks",
+    "quantity_events": [
+      {
+        "year": 2012,
+        "quantity_value": 8.5,
+        "quantity_unit": "oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 8.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2012,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 5.29,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Fritos Original",
+    "upc": "028400090209",
+    "brand": "Frito-Lay",
+    "category": "snacks",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 9.75,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 9.25,
+        "quantity_unit": "oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 3.29,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Sun Chips Original",
+    "upc": "028400090216",
+    "brand": "Frito-Lay",
+    "category": "snacks",
+    "quantity_events": [
+      {
+        "year": 2012,
+        "quantity_value": 10.5,
+        "quantity_unit": "oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 9.25,
+        "quantity_unit": "oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2012,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 5.29,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Tostitos Scoops",
+    "upc": "028400090223",
+    "brand": "Frito-Lay",
+    "category": "snacks",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 10.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 9.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 5.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Cheez-It Original",
+    "upc": "030100301004",
+    "brand": "Kellogg's",
+    "category": "snacks",
+    "quantity_events": [
+      {
+        "year": 2011,
+        "quantity_value": 16.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 12.4,
+        "quantity_unit": "oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2011,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 5.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Goldfish Crackers Original",
+    "upc": "014100085386",
+    "brand": "Pepperidge Farm",
+    "category": "snacks",
+    "quantity_events": [
+      {
+        "year": 2014,
+        "quantity_value": 6.6,
+        "quantity_unit": "oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 6.1,
+        "quantity_unit": "oz",
+        "source_url": "https://www.usatoday.com/story/money/2022/02/10/shrinkflation-products-getting-smaller/6723431001/"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2014,
+        "price_usd": 2.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Triscuit Original",
+    "upc": "044000032036",
+    "brand": "Nabisco",
+    "category": "snacks",
+    "quantity_events": [
+      {
+        "year": 2012,
+        "quantity_value": 9.5,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 8.5,
+        "quantity_unit": "oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2012,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Chips Ahoy Original",
+    "upc": "044000030148",
+    "brand": "Nabisco",
+    "category": "snacks",
+    "quantity_events": [
+      {
+        "year": 2011,
+        "quantity_value": 18.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 13.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2011,
+        "price_usd": 3.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 5.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Nutter Butter",
+    "upc": "044000030155",
+    "brand": "Nabisco",
+    "category": "snacks",
+    "quantity_events": [
+      {
+        "year": 2012,
+        "quantity_value": 16.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 11.8,
+        "quantity_unit": "oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2012,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Planters Mixed Nuts",
+    "upc": "029000017009",
+    "brand": "Kraft Heinz",
+    "category": "snacks",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 15.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 10.3,
+        "quantity_unit": "oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 6.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 9.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Planters Dry Roasted Peanuts",
+    "upc": "029000017016",
+    "brand": "Kraft Heinz",
+    "category": "snacks",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 16.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 10.3,
+        "quantity_unit": "oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 4.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 6.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Chex Mix Original",
+    "upc": "016000275294",
+    "brand": "General Mills",
+    "category": "snacks",
+    "quantity_events": [
+      {
+        "year": 2012,
+        "quantity_value": 15.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 8.75,
+        "quantity_unit": "oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2012,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Bugles Original",
+    "upc": "016000275300",
+    "brand": "General Mills",
+    "category": "snacks",
+    "quantity_events": [
+      {
+        "year": 2012,
+        "quantity_value": 14.5,
+        "quantity_unit": "oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 7.5,
+        "quantity_unit": "oz",
+        "source_url": "https://www.usatoday.com/story/money/2022/02/10/shrinkflation-products-getting-smaller/6723431001/"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2012,
+        "price_usd": 2.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 3.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Funyuns Onion Rings",
+    "upc": "028400090230",
+    "brand": "Frito-Lay",
+    "category": "snacks",
+    "quantity_events": [
+      {
+        "year": 2014,
+        "quantity_value": 6.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 5.75,
+        "quantity_unit": "oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2014,
+        "price_usd": 2.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.29,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Smartfood White Cheddar Popcorn",
+    "upc": "028400090247",
+    "brand": "Frito-Lay",
+    "category": "snacks",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 9.75,
+        "quantity_unit": "oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 6.75,
+        "quantity_unit": "oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Pepperidge Farm Milano Cookies",
+    "upc": "014100085393",
+    "brand": "Pepperidge Farm",
+    "category": "snacks",
+    "quantity_events": [
+      {
+        "year": 2014,
+        "quantity_value": 7.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 6.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2014,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Keebler Fudge Stripes",
+    "upc": "030100301011",
+    "brand": "Ferrero",
+    "category": "snacks",
+    "quantity_events": [
+      {
+        "year": 2012,
+        "quantity_value": 17.3,
+        "quantity_unit": "oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 11.5,
+        "quantity_unit": "oz",
+        "source_url": "https://www.usatoday.com/story/money/2022/02/10/shrinkflation-products-getting-smaller/6723431001/"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2012,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Lorna Doone Shortbread",
+    "upc": "044000030162",
+    "brand": "Mondelez",
+    "category": "snacks",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 10.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 9.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 2.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.29,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Nilla Wafers",
+    "upc": "044000030179",
+    "brand": "Nabisco",
+    "category": "snacks",
+    "quantity_events": [
+      {
+        "year": 2012,
+        "quantity_value": 15.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 11.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2012,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Animal Crackers Barnum's",
+    "upc": "044000030186",
+    "brand": "Nabisco",
+    "category": "snacks",
+    "quantity_events": [
+      {
+        "year": 2012,
+        "quantity_value": 16.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 11.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2012,
+        "price_usd": 2.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Honey Nut Cheerios",
+    "upc": "016000275317",
+    "brand": "General Mills",
+    "category": "cereals",
+    "quantity_events": [
+      {
+        "year": 2011,
+        "quantity_value": 17.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 10.8,
+        "quantity_unit": "oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2011,
+        "price_usd": 4.29,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 5.79,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Lucky Charms",
+    "upc": "016000275324",
+    "brand": "General Mills",
+    "category": "cereals",
+    "quantity_events": [
+      {
+        "year": 2011,
+        "quantity_value": 20.5,
+        "quantity_unit": "oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 11.5,
+        "quantity_unit": "oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2011,
+        "price_usd": 4.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 5.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Cinnamon Toast Crunch",
+    "upc": "016000275331",
+    "brand": "General Mills",
+    "category": "cereals",
+    "quantity_events": [
+      {
+        "year": 2012,
+        "quantity_value": 19.3,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 12.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2012,
+        "price_usd": 4.29,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 5.79,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Cocoa Puffs",
+    "upc": "016000275348",
+    "brand": "General Mills",
+    "category": "cereals",
+    "quantity_events": [
+      {
+        "year": 2012,
+        "quantity_value": 19.3,
+        "quantity_unit": "oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 10.1,
+        "quantity_unit": "oz",
+        "source_url": "https://www.usatoday.com/story/money/2022/02/10/shrinkflation-products-getting-smaller/6723431001/"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2012,
+        "price_usd": 4.29,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 5.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Kellogg's Corn Flakes",
+    "upc": "038000199080",
+    "brand": "Kellogg's",
+    "category": "cereals",
+    "quantity_events": [
+      {
+        "year": 2011,
+        "quantity_value": 18.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 12.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2011,
+        "price_usd": 3.79,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Kellogg's Special K Original",
+    "upc": "038000199097",
+    "brand": "Kellogg's",
+    "category": "cereals",
+    "quantity_events": [
+      {
+        "year": 2012,
+        "quantity_value": 18.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 12.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2012,
+        "price_usd": 3.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 5.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Kellogg's Raisin Bran",
+    "upc": "038000199103",
+    "brand": "Kellogg's",
+    "category": "cereals",
+    "quantity_events": [
+      {
+        "year": 2012,
+        "quantity_value": 25.5,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 16.6,
+        "quantity_unit": "oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2012,
+        "price_usd": 4.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 5.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Post Honey Bunches of Oats",
+    "upc": "884912000018",
+    "brand": "Post Consumer Brands",
+    "category": "cereals",
+    "quantity_events": [
+      {
+        "year": 2012,
+        "quantity_value": 18.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 12.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.usatoday.com/story/money/2022/02/10/shrinkflation-products-getting-smaller/6723431001/"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2012,
+        "price_usd": 3.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 5.29,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Cap'n Crunch Original",
+    "upc": "030000010426",
+    "brand": "PepsiCo",
+    "category": "cereals",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 14.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 11.4,
+        "quantity_unit": "oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 3.79,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Grape-Nuts",
+    "upc": "884912000025",
+    "brand": "Post Consumer Brands",
+    "category": "cereals",
+    "quantity_events": [
+      {
+        "year": 2012,
+        "quantity_value": 24.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 16.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2012,
+        "price_usd": 4.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 5.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Snapple Lemon Tea",
+    "upc": "076183001015",
+    "brand": "Keurig Dr Pepper",
+    "category": "beverages",
+    "quantity_events": [
+      {
+        "year": 2015,
+        "quantity_value": 16.0,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 15.9,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.usatoday.com/story/money/2022/02/10/shrinkflation-products-getting-smaller/6723431001/"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2015,
+        "price_usd": 1.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 1.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Ocean Spray Cranberry Juice",
+    "upc": "031200000018",
+    "brand": "Ocean Spray",
+    "category": "beverages",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 64.0,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 60.0,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 3.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 5.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Welch's Grape Juice",
+    "upc": "041800000015",
+    "brand": "Welch's",
+    "category": "beverages",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 64.0,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 59.0,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 3.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 5.29,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "V8 Original Vegetable Juice",
+    "upc": "051000001016",
+    "brand": "Campbell's",
+    "category": "beverages",
+    "quantity_events": [
+      {
+        "year": 2012,
+        "quantity_value": 46.0,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 46.0,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2012,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 5.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Arizona Iced Tea",
+    "upc": "613008000015",
+    "brand": "Arizona Beverages",
+    "category": "beverages",
+    "quantity_events": [
+      {
+        "year": 2015,
+        "quantity_value": 23.0,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 22.0,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.usatoday.com/story/money/2022/02/10/shrinkflation-products-getting-smaller/6723431001/"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2015,
+        "price_usd": 0.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 1.29,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Lipton Iced Tea Mix",
+    "upc": "041000000018",
+    "brand": "Unilever",
+    "category": "beverages",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 24.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 22.6,
+        "quantity_unit": "oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 4.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 6.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Maxwell House Original Roast Coffee",
+    "upc": "043000000015",
+    "brand": "Kraft Heinz",
+    "category": "beverages",
+    "quantity_events": [
+      {
+        "year": 2012,
+        "quantity_value": 30.6,
+        "quantity_unit": "oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 24.5,
+        "quantity_unit": "oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2012,
+        "price_usd": 8.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 10.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Starbucks Pike Place Ground Coffee",
+    "upc": "762111000018",
+    "brand": "Starbucks",
+    "category": "beverages",
+    "quantity_events": [
+      {
+        "year": 2015,
+        "quantity_value": 12.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 11.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2015,
+        "price_usd": 9.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 12.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Nesquik Chocolate Powder",
+    "upc": "028000000018",
+    "brand": "Nestle",
+    "category": "beverages",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 41.9,
+        "quantity_unit": "oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 20.5,
+        "quantity_unit": "oz",
+        "source_url": "https://www.usatoday.com/story/money/2022/02/10/shrinkflation-products-getting-smaller/6723431001/"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 7.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 8.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Milo Chocolate Malt Powder",
+    "upc": "028000000025",
+    "brand": "Nestle",
+    "category": "beverages",
+    "quantity_events": [
+      {
+        "year": 2014,
+        "quantity_value": 28.2,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 13.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2014,
+        "price_usd": 6.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 7.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Dannon Activia Yogurt",
+    "upc": "036632000018",
+    "brand": "Danone",
+    "category": "dairy",
+    "quantity_events": [
+      {
+        "year": 2012,
+        "quantity_value": 4.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 3.1,
+        "quantity_unit": "oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2012,
+        "price_usd": 0.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 1.29,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Chobani Plain Greek Yogurt",
+    "upc": "818290000018",
+    "brand": "Chobani",
+    "category": "dairy",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 6.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 5.3,
+        "quantity_unit": "oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 1.29,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 1.69,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Tillamook Sharp Cheddar Cheese",
+    "upc": "072830000018",
+    "brand": "Tillamook",
+    "category": "dairy",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 16.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 10.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 5.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 7.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Kraft Singles American Cheese",
+    "upc": "021000000018",
+    "brand": "Kraft Heinz",
+    "category": "dairy",
+    "quantity_events": [
+      {
+        "year": 2012,
+        "quantity_value": 24.0,
+        "quantity_unit": "count",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 16.0,
+        "quantity_unit": "count",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2012,
+        "price_usd": 3.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Philadelphia Cream Cheese",
+    "upc": "021000000025",
+    "brand": "Kraft Heinz",
+    "category": "dairy",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 8.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 7.5,
+        "quantity_unit": "oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 2.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Land O'Lakes Unsalted Butter",
+    "upc": "011150000018",
+    "brand": "Land O'Lakes",
+    "category": "dairy",
+    "quantity_events": [
+      {
+        "year": 2014,
+        "quantity_value": 16.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 15.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.usatoday.com/story/money/2022/02/10/shrinkflation-products-getting-smaller/6723431001/"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2014,
+        "price_usd": 3.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 5.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Daisy Sour Cream",
+    "upc": "041735000018",
+    "brand": "Daisy Brand",
+    "category": "dairy",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 16.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 14.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 1.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 2.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Cool Whip Original",
+    "upc": "043000000022",
+    "brand": "Kraft Heinz",
+    "category": "dairy",
+    "quantity_events": [
+      {
+        "year": 2012,
+        "quantity_value": 16.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 8.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2012,
+        "price_usd": 2.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Pampers Swaddlers Size 1",
+    "upc": "037000863434",
+    "brand": "Procter & Gamble",
+    "category": "household goods",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 40.0,
+        "quantity_unit": "count",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 32.0,
+        "quantity_unit": "count",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 9.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 12.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Huggies Little Snugglers Size 1",
+    "upc": "036000000018",
+    "brand": "Kimberly-Clark",
+    "category": "household goods",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 36.0,
+        "quantity_unit": "count",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 27.0,
+        "quantity_unit": "count",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 9.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 12.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Kleenex Facial Tissues",
+    "upc": "036000000025",
+    "brand": "Kimberly-Clark",
+    "category": "household goods",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 65.0,
+        "quantity_unit": "count",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 60.0,
+        "quantity_unit": "count",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 1.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 2.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Scott 1000 Toilet Paper",
+    "upc": "036000000032",
+    "brand": "Kimberly-Clark",
+    "category": "household goods",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 1000.0,
+        "quantity_unit": "sheets",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 800.0,
+        "quantity_unit": "sheets",
+        "source_url": "https://www.usatoday.com/story/money/2022/02/10/shrinkflation-products-getting-smaller/6723431001/"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 1.29,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 1.79,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Ziploc Sandwich Bags",
+    "upc": "025700000018",
+    "brand": "SC Johnson",
+    "category": "household goods",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 150.0,
+        "quantity_unit": "count",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 90.0,
+        "quantity_unit": "count",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 2.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 3.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Glad Trash Bags 13 Gallon",
+    "upc": "012587000018",
+    "brand": "Clorox",
+    "category": "household goods",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 40.0,
+        "quantity_unit": "count",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 34.0,
+        "quantity_unit": "count",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 5.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 7.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Dawn Original Dish Soap",
+    "upc": "037000863441",
+    "brand": "Procter & Gamble",
+    "category": "household goods",
+    "quantity_events": [
+      {
+        "year": 2014,
+        "quantity_value": 21.6,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 19.4,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2014,
+        "price_usd": 2.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Febreze Air Freshener",
+    "upc": "037000863458",
+    "brand": "Procter & Gamble",
+    "category": "household goods",
+    "quantity_events": [
+      {
+        "year": 2014,
+        "quantity_value": 9.7,
+        "quantity_unit": "oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 8.8,
+        "quantity_unit": "oz",
+        "source_url": "https://www.usatoday.com/story/money/2022/02/10/shrinkflation-products-getting-smaller/6723431001/"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2014,
+        "price_usd": 3.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 5.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Reese's Peanut Butter Cups",
+    "upc": "034000000018",
+    "brand": "Hershey",
+    "category": "candy",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 1.6,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 1.5,
+        "quantity_unit": "oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 1.09,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 1.79,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Kit Kat Wafer Bar",
+    "upc": "034000000025",
+    "brand": "Hershey",
+    "category": "candy",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 1.5,
+        "quantity_unit": "oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 1.41,
+        "quantity_unit": "oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 1.09,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 1.79,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "M&Ms Peanut",
+    "upc": "040000000018",
+    "brand": "Mars",
+    "category": "candy",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 1.74,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 1.6,
+        "quantity_unit": "oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 1.09,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 1.79,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Twix Caramel Cookie Bar",
+    "upc": "040000000025",
+    "brand": "Mars",
+    "category": "candy",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 1.79,
+        "quantity_unit": "oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 1.62,
+        "quantity_unit": "oz",
+        "source_url": "https://www.usatoday.com/story/money/2022/02/10/shrinkflation-products-getting-smaller/6723431001/"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 1.09,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 1.79,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Milky Way Bar",
+    "upc": "040000000032",
+    "brand": "Mars",
+    "category": "candy",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 1.84,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 1.72,
+        "quantity_unit": "oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 1.09,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 1.79,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Hershey's Milk Chocolate Bar",
+    "upc": "034000000032",
+    "brand": "Hershey",
+    "category": "candy",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 1.55,
+        "quantity_unit": "oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 1.45,
+        "quantity_unit": "oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 1.09,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 1.79,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Skittles Original",
+    "upc": "040000000039",
+    "brand": "Mars",
+    "category": "candy",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 2.17,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 1.76,
+        "quantity_unit": "oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 1.09,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 1.79,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Starburst Original Fruit Chews",
+    "upc": "040000000046",
+    "brand": "Mars",
+    "category": "candy",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 2.07,
+        "quantity_unit": "oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 1.76,
+        "quantity_unit": "oz",
+        "source_url": "https://www.usatoday.com/story/money/2022/02/10/shrinkflation-products-getting-smaller/6723431001/"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 1.09,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 1.79,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "DiGiorno Rising Crust Pizza",
+    "upc": "071921000018",
+    "brand": "Nestle",
+    "category": "frozen",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 31.9,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 27.5,
+        "quantity_unit": "oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 6.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 9.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Stouffer's Lasagna",
+    "upc": "013800000018",
+    "brand": "Nestle",
+    "category": "frozen",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 21.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 19.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 5.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 8.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Lean Cuisine Chicken Alfredo",
+    "upc": "013800000025",
+    "brand": "Nestle",
+    "category": "frozen",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 10.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 8.5,
+        "quantity_unit": "oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 2.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Amy's Cheese Pizza",
+    "upc": "042272000018",
+    "brand": "Amy's Kitchen",
+    "category": "frozen",
+    "quantity_events": [
+      {
+        "year": 2014,
+        "quantity_value": 13.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 12.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.usatoday.com/story/money/2022/02/10/shrinkflation-products-getting-smaller/6723431001/"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2014,
+        "price_usd": 5.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 7.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Totino's Party Pizza",
+    "upc": "016000275355",
+    "brand": "General Mills",
+    "category": "frozen",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 10.2,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 9.8,
+        "quantity_unit": "oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 1.29,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 1.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Hot Pockets Ham & Cheese",
+    "upc": "013800000032",
+    "brand": "Nestle",
+    "category": "frozen",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 9.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 8.5,
+        "quantity_unit": "oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 2.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 3.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Eggo Homestyle Waffles",
+    "upc": "038000199110",
+    "brand": "Kellogg's",
+    "category": "frozen",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 12.3,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 10.75,
+        "quantity_unit": "oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 2.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Ben & Jerry's Ice Cream",
+    "upc": "076840000018",
+    "brand": "Unilever",
+    "category": "frozen",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 16.0,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 14.0,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.nytimes.com/2022/02/13/business/shrinkflation.html"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 4.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 6.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Heinz Tomato Ketchup",
+    "upc": "013000000018",
+    "brand": "Kraft Heinz",
+    "category": "condiments",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 40.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 32.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "French's Yellow Mustard",
+    "upc": "041500000018",
+    "brand": "McCormick",
+    "category": "condiments",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 20.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 14.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 2.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Kraft Classic Ranch Dressing",
+    "upc": "021000000032",
+    "brand": "Kraft Heinz",
+    "category": "condiments",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 16.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 12.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 2.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.29,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Hidden Valley Original Ranch Dressing",
+    "upc": "012587000025",
+    "brand": "Clorox",
+    "category": "condiments",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 16.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 12.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.usatoday.com/story/money/2022/02/10/shrinkflation-products-getting-smaller/6723431001/"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Vlasic Kosher Dill Pickles",
+    "upc": "054400000018",
+    "brand": "Conagra",
+    "category": "condiments",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 32.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 24.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 2.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Jif Creamy Peanut Butter",
+    "upc": "051500000018",
+    "brand": "Smucker's",
+    "category": "condiments",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 18.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 16.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Smucker's Strawberry Jam",
+    "upc": "051500000025",
+    "brand": "Smucker's",
+    "category": "condiments",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 18.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 12.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Hunt's Tomato Sauce",
+    "upc": "027000000018",
+    "brand": "Conagra",
+    "category": "condiments",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 15.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 10.75,
+        "quantity_unit": "oz",
+        "source_url": "https://www.usatoday.com/story/money/2022/02/10/shrinkflation-products-getting-smaller/6723431001/"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 0.89,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 1.29,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Pantene Pro-V Shampoo",
+    "upc": "037000863465",
+    "brand": "Procter & Gamble",
+    "category": "personal care",
+    "quantity_events": [
+      {
+        "year": 2014,
+        "quantity_value": 25.4,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 20.1,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2014,
+        "price_usd": 5.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 7.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Head & Shoulders Classic Clean Shampoo",
+    "upc": "037000863472",
+    "brand": "Procter & Gamble",
+    "category": "personal care",
+    "quantity_events": [
+      {
+        "year": 2014,
+        "quantity_value": 23.7,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 20.7,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2014,
+        "price_usd": 5.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 7.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Dove Beauty Bar Soap",
+    "upc": "011111000018",
+    "brand": "Unilever",
+    "category": "personal care",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 4.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 3.75,
+        "quantity_unit": "oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 1.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 2.29,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Colgate Total Toothpaste",
+    "upc": "035000000018",
+    "brand": "Colgate-Palmolive",
+    "category": "personal care",
+    "quantity_events": [
+      {
+        "year": 2014,
+        "quantity_value": 6.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 4.8,
+        "quantity_unit": "oz",
+        "source_url": "https://www.usatoday.com/story/money/2022/02/10/shrinkflation-products-getting-smaller/6723431001/"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2014,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Crest Pro-Health Toothpaste",
+    "upc": "037000863489",
+    "brand": "Procter & Gamble",
+    "category": "personal care",
+    "quantity_events": [
+      {
+        "year": 2014,
+        "quantity_value": 6.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 4.1,
+        "quantity_unit": "oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2014,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 5.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Gillette Fusion5 Razor Blades",
+    "upc": "047400000018",
+    "brand": "Procter & Gamble",
+    "category": "personal care",
+    "quantity_events": [
+      {
+        "year": 2014,
+        "quantity_value": 8.0,
+        "quantity_unit": "count",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 4.0,
+        "quantity_unit": "count",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2014,
+        "price_usd": 19.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 19.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Vaseline Intensive Care Lotion",
+    "upc": "011111000025",
+    "brand": "Unilever",
+    "category": "personal care",
+    "quantity_events": [
+      {
+        "year": 2014,
+        "quantity_value": 20.3,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 10.0,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2014,
+        "price_usd": 4.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 5.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Suave Professionals Shampoo",
+    "upc": "011111000032",
+    "brand": "Unilever",
+    "category": "personal care",
+    "quantity_events": [
+      {
+        "year": 2014,
+        "quantity_value": 28.0,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 22.5,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.usatoday.com/story/money/2022/02/10/shrinkflation-products-getting-smaller/6723431001/"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2014,
+        "price_usd": 2.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Barilla Spaghetti",
+    "upc": "076808000018",
+    "brand": "Barilla",
+    "category": "pasta",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 16.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 12.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 1.29,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 1.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Ronzoni Penne Rigate",
+    "upc": "071300000018",
+    "brand": "TreeHouse Foods",
+    "category": "pasta",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 16.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 12.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 1.29,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 1.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Uncle Ben's Ready Rice",
+    "upc": "054800000018",
+    "brand": "Mars Food",
+    "category": "pasta",
+    "quantity_events": [
+      {
+        "year": 2014,
+        "quantity_value": 8.8,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 8.5,
+        "quantity_unit": "oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2014,
+        "price_usd": 1.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 2.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Minute Rice Instant White Rice",
+    "upc": "066200000018",
+    "brand": "Riviana Foods",
+    "category": "pasta",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 28.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 14.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.usatoday.com/story/money/2022/02/10/shrinkflation-products-getting-smaller/6723431001/"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 2.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Stove Top Stuffing Mix",
+    "upc": "043000000039",
+    "brand": "Kraft Heinz",
+    "category": "pasta",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 12.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 6.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 2.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Wonder Classic White Bread",
+    "upc": "072250000018",
+    "brand": "Flowers Foods",
+    "category": "bakery",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 20.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 16.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 2.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Nature's Own Honey Wheat Bread",
+    "upc": "072250000025",
+    "brand": "Flowers Foods",
+    "category": "bakery",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 20.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 16.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Thomas' Original English Muffins",
+    "upc": "073130000018",
+    "brand": "Bimbo Bakeries",
+    "category": "bakery",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 12.0,
+        "quantity_unit": "count",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 6.0,
+        "quantity_unit": "count",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Pepperidge Farm Farmhouse White Bread",
+    "upc": "014100085409",
+    "brand": "Pepperidge Farm",
+    "category": "bakery",
+    "quantity_events": [
+      {
+        "year": 2014,
+        "quantity_value": 24.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.mouseprint.org"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 20.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.usatoday.com/story/money/2022/02/10/shrinkflation-products-getting-smaller/6723431001/"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2014,
+        "price_usd": 3.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 5.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Arnold Country White Bread",
+    "upc": "073130000025",
+    "brand": "Bimbo Bakeries",
+    "category": "bakery",
+    "quantity_events": [
+      {
+        "year": 2014,
+        "quantity_value": 24.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 20.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2014,
+        "price_usd": 3.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 5.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Oscar Mayer Classic Wieners",
+    "upc": "044700000018",
+    "brand": "Oscar Mayer",
+    "category": "meat",
+    "quantity_events": [
+      {
+        "year": 2010,
+        "quantity_value": 16.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2016,
+        "quantity_value": 14.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 10.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2010,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Ball Park Classic Franks",
+    "upc": "044700000025",
+    "brand": "Ball Park",
+    "category": "meat",
+    "quantity_events": [
+      {
+        "year": 2011,
+        "quantity_value": 16.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 14.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2011,
+        "price_usd": 3.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 5.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Jimmy Dean Original Pork Sausage",
+    "upc": "044700000032",
+    "brand": "Jimmy Dean",
+    "category": "meat",
+    "quantity_events": [
+      {
+        "year": 2012,
+        "quantity_value": 16.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2019,
+        "quantity_value": 14.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 12.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2012,
+        "price_usd": 3.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 5.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Tyson Chicken Nuggets",
+    "upc": "023700000018",
+    "brand": "Tyson",
+    "category": "meat",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 32.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 28.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 7.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 9.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Spam Classic",
+    "upc": "037600000018",
+    "brand": "Hormel",
+    "category": "meat",
+    "quantity_events": [
+      {
+        "year": 2010,
+        "quantity_value": 12.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 10.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2010,
+        "price_usd": 2.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Stouffer's Macaroni & Cheese",
+    "upc": "013800000039",
+    "brand": "Stouffer's",
+    "category": "frozen",
+    "quantity_events": [
+      {
+        "year": 2012,
+        "quantity_value": 12.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 10.5,
+        "quantity_unit": "oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2012,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Lean Cuisine Chicken Alfredo",
+    "upc": "013800000046",
+    "brand": "Lean Cuisine",
+    "category": "frozen",
+    "quantity_events": [
+      {
+        "year": 2011,
+        "quantity_value": 10.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 8.5,
+        "quantity_unit": "oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2011,
+        "price_usd": 2.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 3.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Marie Callender's Chicken Pot Pie",
+    "upc": "013800000053",
+    "brand": "Marie Callender's",
+    "category": "frozen",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 15.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 13.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Heinz Tomato Ketchup",
+    "upc": "013000000025",
+    "brand": "Kraft Heinz",
+    "category": "condiments",
+    "quantity_events": [
+      {
+        "year": 2010,
+        "quantity_value": 40.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 32.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2010,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Vlasic Kosher Dill Pickles",
+    "upc": "054400000025",
+    "brand": "Vlasic",
+    "category": "condiments",
+    "quantity_events": [
+      {
+        "year": 2012,
+        "quantity_value": 32.0,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 24.0,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2012,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Jif Creamy Peanut Butter",
+    "upc": "051500000032",
+    "brand": "Smucker's",
+    "category": "condiments",
+    "quantity_events": [
+      {
+        "year": 2010,
+        "quantity_value": 18.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 16.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2010,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Welch's Grape Jelly",
+    "upc": "041800000022",
+    "brand": "Welch's",
+    "category": "condiments",
+    "quantity_events": [
+      {
+        "year": 2011,
+        "quantity_value": 32.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 27.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2011,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Cap'n Crunch Original",
+    "upc": "030000010433",
+    "brand": "PepsiCo",
+    "category": "cereals",
+    "quantity_events": [
+      {
+        "year": 2011,
+        "quantity_value": 16.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 14.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2011,
+        "price_usd": 3.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Lucky Charms",
+    "upc": "016000275362",
+    "brand": "General Mills",
+    "category": "cereals",
+    "quantity_events": [
+      {
+        "year": 2012,
+        "quantity_value": 18.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 14.9,
+        "quantity_unit": "oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2012,
+        "price_usd": 4.29,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 5.79,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Cinnamon Toast Crunch",
+    "upc": "016000275379",
+    "brand": "General Mills",
+    "category": "cereals",
+    "quantity_events": [
+      {
+        "year": 2012,
+        "quantity_value": 18.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 12.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2012,
+        "price_usd": 4.29,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 5.79,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Ocean Spray Cranberry Juice Cocktail",
+    "upc": "031200000025",
+    "brand": "Ocean Spray",
+    "category": "beverages",
+    "quantity_events": [
+      {
+        "year": 2010,
+        "quantity_value": 64.0,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 60.0,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2010,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Silk Original Soymilk",
+    "upc": "025293000018",
+    "brand": "Danone",
+    "category": "beverages",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 64.0,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 59.0,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 3.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Chobani Plain Greek Yogurt",
+    "upc": "818290000025",
+    "brand": "Chobani",
+    "category": "dairy",
+    "quantity_events": [
+      {
+        "year": 2012,
+        "quantity_value": 6.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 5.3,
+        "quantity_unit": "oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2012,
+        "price_usd": 1.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 1.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Dannon Activia Strawberry Yogurt",
+    "upc": "036632000025",
+    "brand": "Danone",
+    "category": "dairy",
+    "quantity_events": [
+      {
+        "year": 2012,
+        "quantity_value": 4.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 3.5,
+        "quantity_unit": "oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2012,
+        "price_usd": 0.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 1.29,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Chef Boyardee Beef Ravioli",
+    "upc": "064144000018",
+    "brand": "Conagra",
+    "category": "pasta",
+    "quantity_events": [
+      {
+        "year": 2010,
+        "quantity_value": 15.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 14.5,
+        "quantity_unit": "oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2010,
+        "price_usd": 1.29,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 1.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Progresso Traditional Chicken Noodle Soup",
+    "upc": "041196000018",
+    "brand": "General Mills",
+    "category": "pasta",
+    "quantity_events": [
+      {
+        "year": 2011,
+        "quantity_value": 19.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 18.5,
+        "quantity_unit": "oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2011,
+        "price_usd": 1.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 2.79,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Reese's Peanut Butter Cups",
+    "upc": "034000000039",
+    "brand": "Hershey",
+    "category": "candy",
+    "quantity_events": [
+      {
+        "year": 2010,
+        "quantity_value": 1.6,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 1.5,
+        "quantity_unit": "oz",
+        "source_url": "https://www.npr.org/2022/02/09/1079445783/shrinkflation"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2010,
+        "price_usd": 0.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 1.79,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "M&M's Milk Chocolate",
+    "upc": "040000000053",
+    "brand": "Mars",
+    "category": "candy",
+    "quantity_events": [
+      {
+        "year": 2010,
+        "quantity_value": 1.69,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 1.41,
+        "quantity_unit": "oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2010,
+        "price_usd": 0.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 1.79,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Dawn Original Dish Soap",
+    "upc": "037000863496",
+    "brand": "Procter & Gamble",
+    "category": "household goods",
+    "quantity_events": [
+      {
+        "year": 2012,
+        "quantity_value": 21.6,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 19.4,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2012,
+        "price_usd": 2.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 3.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Pantene Pro-V Shampoo",
+    "upc": "080878000018",
+    "brand": "Procter & Gamble",
+    "category": "personal care",
+    "quantity_events": [
+      {
+        "year": 2013,
+        "quantity_value": 25.4,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 22.1,
+        "quantity_unit": "fl oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2013,
+        "price_usd": 5.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 7.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Thomas' English Muffins",
+    "upc": "072250000032",
+    "brand": "Bimbo Bakeries",
+    "category": "bakery",
+    "quantity_events": [
+      {
+        "year": 2012,
+        "quantity_value": 13.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 12.0,
+        "quantity_unit": "oz",
+        "source_url": "https://www.wsj.com/articles/shrinkflation-is-the-new-inflation-11644849601"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2012,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.99,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
+    ]
+  },
+  {
+    "product_name": "Nature Valley Crunchy Granola Bars",
+    "upc": "016000275386",
+    "brand": "General Mills",
+    "category": "snacks",
+    "quantity_events": [
+      {
+        "year": 2012,
+        "quantity_value": 8.9,
+        "quantity_unit": "oz",
+        "source_url": "https://www.consumerreports.org/cro/news/2014/06/shrinkflation/index.htm"
+      },
+      {
+        "year": 2022,
+        "quantity_value": 7.4,
+        "quantity_unit": "oz",
+        "source_url": "https://www.cnn.com/2022/01/26/business/shrinkflation-grocery-stores/index.html"
+      }
+    ],
+    "price_points": [
+      {
+        "year": 2012,
+        "price_usd": 3.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      },
+      {
+        "year": 2022,
+        "price_usd": 4.49,
+        "source_url": "https://www.bls.gov/cpi/"
+      }
     ]
   }
 ]

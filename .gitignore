@@ -10,6 +10,7 @@ shrinkflation.db
 venv/
 .venv/
 *.egg-info/
+.env
 
 # Node
 frontend/node_modules/
