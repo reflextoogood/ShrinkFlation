@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { api } from '../api/client'
 import type { ShrinkflationReceipt } from '../types'
-import { DeceptionGapBadge } from '../components/DeceptionGapBadge'
-import { QuantityTimeline } from '../components/QuantityTimeline'
-import { PriceTimeline } from '../components/PriceTimeline'
+import DeceptionGapBadge from '../components/ShrinkflationReceipt/DeceptionGapBadge'
+import QuantityTimeline from '../components/ShrinkflationReceipt/QuantityTimeline'
+import PriceTimeline from '../components/ShrinkflationReceipt/PriceTimeline'
 import { VerifiedBadge } from '../components/ui/Badge'
 import { Card, Skeleton } from '../components/ui/Card'
 
@@ -63,12 +63,12 @@ export function ReceiptPage() {
       )}
 
       {/* Deception Gap */}
-      <DeceptionGapBadge gap={receipt.deception_gap} />
+      <DeceptionGapBadge data={receipt.deception_gap} />
 
       {/* Quantity Timeline */}
       <QuantityTimeline
         data={receipt.quantity_timeline}
-        cumulativeReduction={receipt.cumulative_quantity_reduction_pct ?? undefined}
+        cumulativeReductionPct={receipt.cumulative_quantity_reduction_pct ?? undefined}
       />
 
       {/* Price Timeline */}

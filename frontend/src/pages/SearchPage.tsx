@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { api } from '../api/client'
 import type { SearchResponse } from '../types'
-import { SearchBar } from '../components/SearchBar'
-import { SearchResults } from '../components/SearchResults'
+import SearchBar from '../components/SearchBar'
+import SearchResults from '../components/SearchResults'
 import { Skeleton } from '../components/ui/Card'
 
 export function SearchPage() {
@@ -45,7 +45,7 @@ export function SearchPage() {
           <p className="text-slate-400 text-sm mb-4">
             {data.total} result{data.total !== 1 ? 's' : ''} for "{q || upc}"
           </p>
-          <SearchResults results={data.results} offUnavailable={data.off_unavailable} />
+          <SearchResults results={data.results} off_unavailable={data.off_unavailable} total={data.total} />
         </>
       )}
     </div>
