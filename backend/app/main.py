@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.db.session import engine, Base, SessionLocal
 from app.models import db as _models  # noqa: F401 — registers ORM models
-from app.routers import leaderboard, reports, calculator, receipt, search
+from app.routers import leaderboard, reports, calculator, receipt, search, agent
 
 app = FastAPI(title="ShrinkFlation API", version="1.0.0")
 
@@ -19,6 +19,7 @@ app.include_router(reports.router)
 app.include_router(calculator.router)
 app.include_router(receipt.router)
 app.include_router(search.router)
+app.include_router(agent.router)
 
 
 @app.on_event("startup")
