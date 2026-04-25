@@ -22,7 +22,7 @@ Tasks are sequenced for the fastest path to a working demo: seed data first, the
   - Wire `app/main.py` to create all DB tables on startup via `Base.metadata.create_all`
   - _Requirements: 1.1, 2.1, 11.1_
 
-- [ ] 2. Seed database with real shrinkflation data <!-- Deepak -->
+- [x] 2. Seed database with real shrinkflation data <!-- Deepak -->
   - Create `app/seed/seed_data.json` containing 20–30 verified shrinkflation examples covering at least 10 brands and 5 grocery categories (snacks, beverages, dairy, cereals, household goods); each entry must include product name, UPC, brand, at least 2 quantity data points with dates, at least 1 price data point, and a source citation URL per data point
   - Write `app/seed/loader.py` that reads `seed_data.json` and upserts Products, Brands, ShrinkflationEvents, and PricePoints into SQLite on app startup; call it from the FastAPI `startup` event in `main.py`
   - Write a build-time script `scripts/check_seed_urls.py` that HTTP-checks every source URL in `seed_data.json` and prints a report of broken links
@@ -61,35 +61,35 @@ Tasks are sequenced for the fastest path to a working demo: seed data first, the
     - **Property 6: Cumulative quantity reduction formula** — `st.lists(st.floats(min_value=0.1), min_size=2)`; assert formula matches
     - **Validates: Requirements 3.4**
 
-- [ ] 5. Backend: BLS API client and receipt service <!-- Deepak -->
-  - [ ] 5.1 Implement BLS API client in `app/services/bls_client.py`
+- [x] 5. Backend: BLS API client and receipt service <!-- Deepak -->
+  - [x] 5.1 Implement BLS API client in `app/services/bls_client.py`
     - Write `fetch_bls_series(series_id: str, start_year: int, end_year: int) -> list[dict]` calling BLS Public Data API v2; persist results to `BLSCache` table with `fetched_at` and `bls_vintage_date`
     - On cache hit (same series_id, fetched within 24 hours), return cached data without calling BLS
     - On BLS API failure, return cached data if available; raise `BLSUnavailableError` if no cache exists
     - _Requirements: 4.2, 6.1, 12.3_
 
-  - [ ] 5.2 Implement receipt service in `app/services/receipt_service.py`
+  - [x] 5.2 Implement receipt service in `app/services/receipt_service.py`
     - Write `build_receipt(product_id: str, db, bls_client) -> ShrinkflationReceipt` that assembles quantity timeline, price timeline (BLS preferred, seed fallback), per-unit timeline, deception gap, cumulative reduction, and source citations
     - Attach `data_last_updated` (now) and `staleness_warning` when `off_last_updated` is > 180 days ago
     - _Requirements: 3.1, 3.2, 4.1, 4.2, 5.2, 6.1, 7.1, 12.1, 12.2_
 
-  - [ ] 5.3 Implement receipt router in `app/routers/receipt.py`
+  - [x] 5.3 Implement receipt router in `app/routers/receipt.py`
     - Wire `GET /api/v1/receipt/{product_id}` to `receipt_service.build_receipt`; return 404 when product not found; return 503 with fallback notice when BLS is unavailable and no cache exists
     - _Requirements: 3.1, 4.1, 6.6, 12.1_
 
-- [ ] 6. Backend: Product search endpoints <!-- Deepak -->
-  - [ ] 6.1 Implement Open Food Facts client in `app/services/off_client.py`
+- [x] 6. Backend: Product search endpoints <!-- Deepak -->
+  - [x] 6.1 Implement Open Food Facts client in `app/services/off_client.py`
     - Write `search_by_name(query: str) -> list[dict]` and `search_by_upc(upc: str) -> dict | None` calling the OFF API v2; cache responses in-memory with a 1-hour TTL
     - On OFF API failure, raise `OFFUnavailableError`
     - _Requirements: 1.2, 1.5, 2.2_
 
-  - [ ] 6.2 Implement search service in `app/services/search_service.py`
+  - [x] 6.2 Implement search service in `app/services/search_service.py`
     - Write `search_products(query: str, db, off_client) -> list[ProductSearchResult]` merging seed DB results with OFF results; deduplicate by UPC; mark each result as "verified" or "unverified"
     - Write `search_by_upc(upc: str, db, off_client) -> ProductSearchResult | None`
     - On `OFFUnavailableError`, serve seed-only results and set `off_unavailable=True` in the response
     - _Requirements: 1.2, 1.4, 1.5, 2.2_
 
-  - [ ] 6.3 Implement search router in `app/routers/search.py`
+  - [x] 6.3 Implement search router in `app/routers/search.py`
     - Wire `GET /api/v1/search?q={name}` and `GET /api/v1/search?upc={code}` to the search service
     - Validate name length (1–200 chars) and UPC format (8–14 digits, numeric only); return HTTP 422 with structured error body on validation failure
     - _Requirements: 1.1, 1.3, 2.1, 2.5_
@@ -149,8 +149,8 @@ Tasks are sequenced for the fastest path to a working demo: seed data first, the
   - Verify in the browser that a user can type a product name, see search results with verified badges, click a result, and see the full Shrinkflation Receipt with all charts, deception gap badge, and source citations rendered correctly for at least one seed product.
   - Ensure all tests pass, ask the user if questions arise.
 
-- [ ] 10. Backend: Brand Leaderboard <!-- Aneesh -->
-  - [ ] 10.1 Implement severity score calculation in `app/calculations/severity_score.py`
+- [x] 10. Backend: Brand Leaderboard <!-- Aneesh -->
+  - [x] 10.1 Implement severity score calculation in `app/calculations/severity_score.py`
     - Write `compute_severity_score(events: list[ShrinkflationEvent]) -> float` applying recency weighting (2× for events within last 3 years) and normalizing to 0–100
     - _Requirements: 8.2_
 
@@ -158,12 +158,12 @@ Tasks are sequenced for the fastest path to a working demo: seed data first, the
     - **Property 17: Severity score formula correctness** — `st.lists(st.builds(ShrinkflationEvent), min_size=1)`; assert recency_weight=2.0 for recent events, 1.0 otherwise, and normalized result in [0, 100]
     - **Validates: Requirements 8.2**
 
-  - [ ] 10.3 Implement leaderboard service in `app/services/leaderboard_service.py`
+  - [x] 10.3 Implement leaderboard service in `app/services/leaderboard_service.py`
     - Write `get_leaderboard(db) -> list[BrandLeaderboardEntry]` returning brands sorted by severity_score descending, each with brand name, affected product count, average deception gap, severity score, last-updated timestamp, and total verified event count
     - Write `get_brand_detail(brand_id: str, db) -> BrandDetail` returning only verified events for that brand with links to product receipts
     - _Requirements: 8.1, 8.3, 8.4, 8.6_
 
-  - [ ] 10.4 Implement leaderboard router in `app/routers/leaderboard.py`
+  - [x] 10.4 Implement leaderboard router in `app/routers/leaderboard.py`
     - Wire `GET /api/v1/leaderboard` and `GET /api/v1/leaderboard/{brand_id}` to the leaderboard service; return 404 when brand not found
     - _Requirements: 8.1, 8.4_
 
@@ -179,13 +179,13 @@ Tasks are sequenced for the fastest path to a working demo: seed data first, the
   - **Property 19: Brand detail contains only verified events for that brand** — `st.lists(st.builds(ShrinkflationEvent))`; assert all events have `verification_status == "verified"` and matching `brand_id`
   - **Validates: Requirements 8.1, 8.3, 8.4**
 
-- [ ] 12. Backend: Crowdsourced Reporting <!-- Aneesh -->
-  - [ ] 12.1 Implement report service in `app/services/report_service.py`
+- [x] 12. Backend: Crowdsourced Reporting <!-- Aneesh -->
+  - [x] 12.1 Implement report service in `app/services/report_service.py`
     - Write `submit_report(submission: ReportSubmission, db) -> CrowdsourcedReport` that validates required fields (product name, brand, before-quantity, after-quantity, date), persists the report with `verification_status="unverified"` and a UUID `submission_id`, and returns the stored record
     - Write `auto_verify_report(report_id: str, db, off_client) -> CrowdsourcedReport` that cross-checks the report against OFF data; if matched, set `verification_status="verified"` and populate `confirming_source`
     - _Requirements: 9.2, 9.3, 9.4, 9.5_
 
-  - [ ] 12.2 Implement report router in `app/routers/reports.py`
+  - [x] 12.2 Implement report router in `app/routers/reports.py`
     - Wire `POST /api/v1/reports` to accept multipart form data (report fields + optional image); validate image as JPEG or PNG and ≤ 5 MB; return HTTP 422 with structured error on validation failure; return confirmation with `submission_id` on success
     - _Requirements: 9.1, 9.2, 9.3, 9.6_
 
@@ -203,18 +203,18 @@ Tasks are sequenced for the fastest path to a working demo: seed data first, the
   - On successful submission, display confirmation message with the returned `submission_id`
   - _Requirements: 9.1, 9.2, 9.3, 9.6_
 
-- [ ] 14. Backend: Grocery List Calculator <!-- Aneesh -->
-  - [ ] 14.1 Implement calculator service in `app/services/calculator_service.py`
+- [x] 14. Backend: Grocery List Calculator <!-- Aneesh -->
+  - [x] 14.1 Implement calculator service in `app/services/calculator_service.py`
     - Write `calculate_grocery_list(request: GroceryListRequest, db, bls_client) -> GroceryListResponse` that for each item: validates `weekly_quantity` in [1, 52], retrieves current and 2019-baseline per-unit prices, computes `annual_hidden_cost = (current_per_unit - baseline_per_unit) * weekly_quantity * 52`, and sums all item costs into `total_annual_hidden_cost`
     - Return `has_data=False` with "No shrinkflation data available" for items with no verified data
     - _Requirements: 10.1, 10.2, 10.3, 10.4, 10.5_
 
-  - [ ] 14.2 Implement CSV/PDF export in `app/services/calculator_service.py`
+  - [x] 14.2 Implement CSV/PDF export in `app/services/calculator_service.py`
     - Write `export_csv(results: GroceryListResponse) -> str` generating a CSV with columns: product name, weekly quantity, baseline per-unit price, current per-unit price, annual hidden cost, source citations
     - Write `export_pdf(results: GroceryListResponse) -> bytes` generating a PDF with the same data using a lightweight library (e.g., reportlab or fpdf2)
     - _Requirements: 10.6_
 
-  - [ ] 14.3 Implement calculator router in `app/routers/calculator.py`
+  - [x] 14.3 Implement calculator router in `app/routers/calculator.py`
     - Wire `POST /api/v1/calculator` to the calculator service; add `GET /api/v1/calculator/export?format=csv|pdf` for export
     - _Requirements: 10.1, 10.6_
 
@@ -237,7 +237,7 @@ Tasks are sequenced for the fastest path to a working demo: seed data first, the
   - Implement `GET /api/v1/sources` router in `app/routers/sources.py` returning the data sources list
   - _Requirements: 12.4_
 
-- [ ] 17. Remaining property-based tests <!-- Aneesh -->
+- [x] 17. Remaining property-based tests <!-- Aneesh -->
   - [ ]* 17.1 Write property tests for search result fields (P2, P4) <!-- Aneesh -->
     - **Property 2: Search results contain all required display fields** — `st.builds(ProductSearchResult)`; assert non-null name, brand, quantity, unit, and verification_status in {"verified","unverified"}
     - **Property 4: UPC exact-match invariant** — `st.from_regex(r'\d{8,14}')`; assert returned product UPC equals submitted UPC

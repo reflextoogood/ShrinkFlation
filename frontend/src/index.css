@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
@@ -16,11 +17,18 @@
   --radius: 12px;
   --glass: blur(16px);
 }
+=======
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+>>>>>>> 9a46830a525c250ed36d6b3c24204d89e4f08b90
 
 *, *::before, *::after { box-sizing: border-box; }
 
 body {
   margin: 0;
+<<<<<<< HEAD
   background: var(--bg);
   color: var(--text);
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
@@ -175,3 +183,14 @@ select.input {
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: var(--text-muted); border-radius: 3px; }
+=======
+  background: #0f172a;
+  color: #f1f5f9;
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+@layer utilities {
+  .tabular-nums { font-variant-numeric: tabular-nums; }
+}
+>>>>>>> 9a46830a525c250ed36d6b3c24204d89e4f08b90
